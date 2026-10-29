@@ -8,3 +8,19 @@
     box-sizing: border-box;
 }
 
+/* ==============================
+   BODY & GRUNDLÄGGANDE TYPOGRAFI
+================================= */
+
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #18324A;
+}
+
+/* Gemensam typografi för alla rubriker */
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif ;
+    font-weight: 600;
+}
