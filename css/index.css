@@ -61,7 +61,6 @@
 
 
 
-
 /* =============================
    2. HOME ABOUT - MOBILE FIRST
 ================================ */
@@ -175,7 +174,7 @@
 
 
 /* =========================
-   DESKTOP – 900px
+   LAPTOP – 900px
 ========================= */
 
 @media (min-width: 900px) {
@@ -243,6 +242,69 @@
     }
 
 }
+
+
+/* =========================
+   STÖRRE DESKTOP – 1200px
+========================= */
+
+@media (min-width: 1200px) {
+
+    /* =============================
+       HOME HERO SECTION
+    ================================ */
+
+    /* Hero title */
+    .hero-content h1 {
+        font-size: 56px;
+        max-width: 500px;
+    }
+
+    /* Hero description */
+    .hero-content > p:not(.tag) {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 50ch;
+    }
+
+
+    /* =============================
+       HOME ABOUT SECTION
+    ================================ */
+
+    /* Layout för text and cards */
+    .about-layout {
+        grid-template-columns: 1.3fr 2fr;
+        gap: 24px;
+    }
+
+    /* About-Sektions rubrik */
+    .about-content h2 {
+        font-size: 46px;
+        line-height: 1.1;
+        max-width: 500px;
+    }
+
+    /* Beskrivning om About-sektionen */
+    .about-content > p:not(.tag) {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 60ch;
+    }
+
+    /*  tre korts rubrik */
+    .about-card-content h3 {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    /* Beskrivningar på tre kortet */
+    .about-card-content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
  
 
 
