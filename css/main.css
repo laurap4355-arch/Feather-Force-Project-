@@ -26,12 +26,54 @@ h1, h2, h3 {
 }
 
 /* ==============================
-  3. Global Container
+  3. GLOBAL CONTAINER
 ================================= */
 
+
+
 /* ==============================
-  4. Buttons
+  4. BUTTONS
 ================================= */
+
+/* Alla knappar */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2E7D5B;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Sekundär knappar */
+.button-secondary {
+    border: 2px #18324A solid;
+    background-color: transparent;
+    color: #18324A;
+}
+
+/* Join button */
+.join-button {
+    display: none;
+}
+
+/* Aktivt tillstånd för primära knappar */
+.button-primary:active{
+    background-color: #1B5E40;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 1);
+    color: white;
+}
+
+/* Aktivt tillstånd för sekundär knappar */
+.button-secondary:active{
+    background-color: rgba(255, 246, 246, 0.703);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 1);
+}
+
 
 
 /* =====================================
@@ -123,11 +165,9 @@ h1, h2, h3 {
     text-decoration: underline;
 }
 
-/* Join button */
-.join-button {
-    display: none;
+.join-button:hover{
+background-color: #1B5E40;
 }
-
 
 
 /* =========================
@@ -269,6 +309,7 @@ h1, h2, h3 {
         gap: 32px;
     }
 
+
     /* Join button */
     .join-button {
     display: inline-block;
@@ -276,7 +317,8 @@ h1, h2, h3 {
     background-color: #2E7D5B;
     color: white;
     border-radius: 15px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);} 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
 
 
    /* =============================
