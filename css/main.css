@@ -118,6 +118,11 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
+.nav-list a:active{
+    color: #d39f03;
+    text-decoration: underline;
+}
+
 /* Join button */
 .join-button {
     display: none;
