@@ -24,3 +24,114 @@ h1, h2, h3 {
     font-family: "Poppins", sans-serif ;
     font-weight: 600;
 }
+
+
+/* =========================
+   5. HEADER, NAVIGATION - MOBILE FIRST
+========================= */
+
+/* Sidhuvudets bakgrund och positionering */
+.site-header {
+    background-color: #18324A;
+    position: relative;
+}
+
+
+/* Layout för logotyp och navigation */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+}
+
+
+/* Logo */
+.logo img{
+    display: block;
+    width:200px;
+    height: auto;
+
+}
+
+
+/* Hamburgermeny för mobil */
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    padding: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Hamburgermenyns tre streck */
+.menu-toggle span{
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+
+/* Mobilnavigation, dold som standard */
+.navbar{
+    display: none;
+}
+
+
+/* Layout för navigationslänkar */
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+
+/* Navigationslänkarnas utseende */
+.nav-list a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Join button */
+.join-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2E7D5B;
+    color: white;
+    border-radius: 15px;
+}
+
+
+/* =========================
+   DESKTOP HEADER, NAVIGATION
+========================= */
+@media (min-width: 900px){
+
+    /* Dölj hamburgermenyn på större skärmar */
+    .menu-toggle{
+        display: none;
+    }
+
+    /* Visa och anpassa navigationen för desktop */
+    .navbar{
+        display: block;
+        position: sticky;
+        width: auto;
+        padding: 0;
+       background-color: transparent;
+    }
+
+    .nav-list{
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+    }
+}
