@@ -60,13 +60,131 @@
 }
 
 
+
+
 /* =============================
-   HERO SEKTION - DESKTOP
+   2. HOME ABOUT - MOBILE FIRST
 ================================ */
+/* Mobile First */
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-block: 48px;
+    border-bottom: 1px #B9B9B9 solid;
+    border-top: 1px #B9B9B9 solid;
+
+}
+
+/* Textinnehåll */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Tag */
+.about-content .tag {
+    color: #2E7D5B;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/* Rubrik */
+.about-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #18324A;
+    max-width: 330px;
+}
+
+/* Beskrivning */
+.about-content > p:not(.tag) {
+    color: #18324A;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 45ch;
+    text-align: left;
+ 
+}
+
+/* Kortlayout för mobil */
+.about-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* Informationskortens utseende */
+.about-card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Container för bild och ikon */
+.about-card-media {
+    position: relative;
+}
+
+/* Kortens bilder */
+.about-card-image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Ikonens placering och storlek */
+.about-card-icon {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+}
+
+/* Kortens textinnehåll */
+.about-card-content {
+    padding: 32px 20px 24px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   DESKTOP – 900px
+========================= */
 
 @media (min-width: 900px) {
 
-    /* Two-column layout */
+   /* =============================
+        HOME HERO SEKTION - DESKTOP 
+   ================================ */
+
+    /* Två kolummer layout */
     .hero-layout {
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -79,10 +197,54 @@
         font-size: 56px;
     }
 
-    /* Buttons side by side */
+    /* Knappar */
     .hero-actions {
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
     }
+
+
+    /* =============================
+        HOME ABOUT SEKTION - DESKTOP
+    ================================ */
+
+    /* Layout för text och informationskort */
+    .about-layout {
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Tre kolummer layout för informationskorten */
+    .about-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    /* Bilder */
+    .about-card-image {
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* About-sektionens huvudrubrik */
+    .about-content h2 {
+        font-size: 36px;
+        line-height: 1.05;
+        max-width: 400px;
+    }
+
+    /* Text för 3 kortet */
+    .about-card-content p {
+        font-size: 14px;
+    }
+
 }
+ 
+
+
+  
+
