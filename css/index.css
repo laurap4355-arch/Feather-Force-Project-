@@ -471,7 +471,7 @@
 
     /* Anpassad innehållsbredd för större skärmar */
     .content-container {
-     max-width: 2500px;
+     max-width: 2550px;
      padding-inline: 40px;
     }
     /* ================================================== */
@@ -636,7 +636,52 @@
     /* ================================================== */
     
 
+    /* ========================================
+       CTA SECTION - STÖRRE DESKTOP
+    ===========================================*/
 
+    /* Visa CTA-bilden på större desktop */
+    .cta-layout > img {
+        display: block;
+        width: 80%;
+        height: auto;
+        aspect-ratio: 20 / 9;
+        height: auto;
+        object-fit: cover;
+        border-radius: 32px;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    /* CTA-sektionens layout och bakgrund */
+    .cta-layout {
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        max-width:  95%;
+        gap: 40px;
+    }
+
+    /* CTA-sektionens textlayout */
+    .cta-content {
+     transform: translateY(-50px);
+     padding-left: 5%;
+    }
+
+    /* Sektionens huvudrubrik */
+    .cta-content h2 {
+        color: #18324A;
+        font-size: 46px;
+        line-height: 1.2;
+        max-width: 430px;
+    }
+
+
+    /* CTA-sektionens beskrivning */
+    .cta-content > p:not(.tag) {
+        color: #18324A;
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 400px;
+    }
     
 }
 
