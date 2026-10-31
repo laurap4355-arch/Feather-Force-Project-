@@ -25,6 +25,47 @@
     <!-- Sidhuvud med logotyp och navigation -->
     <header class ="site-header">
 
+         <!-- Container för sidhuvudets layout och innehåll -->
+        <div class ="header-container">
+
+            <!-- Logotyp med länk till startsidan -->
+            <a href="index.html" class ="logo">
+
+                <!-- Feather Force-klubbens logotyp -->
+                <img src ="../images/Feather-Force-logo.png"
+                 alt ="Feather Force Badminton Club logo">
+            </a>
+
+            <!-- Hamburgermeny med tillgänglighetsanpassade attribut -->
+            <button class = "menu-toggle"
+                type ="button"  
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+
+                <!-- Hamburgermenyns tre streck -->
+                <span class ="bar1"></span>     
+                <span class = "bar2"></span>    
+                <span class = "bar3"></span>    
+            </button>
+
+            <!-- Huvudnavigation för webbplatsens sidor -->
+            <nav class="navbar" id="primary-navigation" aria-label="Main navigation">
+
+                <!-- Lista med navigationslänkar -->
+                <ul class="nav-list">
+      
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <!-- Länk till kontaktsidan för medlemskap -->
+                    <li><a href="contact.html" class="join-button">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
 
     <!-- Sidans huvudsakliga innehåll -->
@@ -34,6 +75,89 @@
 
      <!-- Sidfot med länkar och kontaktinformation -->
     <footer class="site-footer">
+
+        <!-- Sidfotens huvudlayout -->
+    <div class="footer-container content-container">
+
+        <!-- Klubbens logotyp med länk till startsidan -->
+        <a href="index.html" class="footer-logo">
+            <img
+                src="../images/Feather-Force-logo.png"
+                alt="Feather Force Badminton Club logo"
+            >
+        </a>
+
+        <!-- Navigationslänkar till webbplatsens sidor -->
+        <nav class="footer-column" aria-label="Footer navigation">
+
+            <!-- Rubrik för navigationslänkar -->
+            <h2>EXPLORE</h2>
+
+            <!-- Lista med sidlänkar -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Join Us</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Sociala medier och kontaktuppgifter -->
+        <div class="footer-column">
+
+            <!-- Rubrik för sociala medier och kontakt -->
+            <h2>FOLLOW &amp; CONTACT</h2>
+
+            <!-- Lista med sociala medier och kontaktlänkar -->
+            <ul>
+
+                <!-- Tillfällig länk tills klubben har ett Instagramkonto -->
+                <li>
+                    <a href="#">
+                     <i class="fi fi-brands-instagram" aria-hidden="true"></i>
+                      Instagram
+                    </a>
+                </li>
+
+                <!-- Länk till klubbens e-postadress -->
+                <li>
+                   <a href="mailto:contact@featherforce.com">
+                     <i class="fi fi-rr-envelope" aria-hidden="true"></i>
+                     mail
+                    </a>
+                </li>
+
+                <!-- Länk till kontaktsidan -->
+                <li>
+                    <a href="contact.html">
+                     <i class="fi fi-sr-marker" aria-hidden="true"></i>
+                     Contact
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Sidfotens nedre del -->
+    <div class="footer-bottom">
+
+        <!-- Copyrightinformation och klubbens slogan -->
+        <div class="footer-bottom-content content-container">
+
+            <!-- Upphovsrättsinformation -->
+            <small>
+                &copy; 2026 Feather Force Badminton Club.
+                All rights reserved.
+            </small>
+
+            <!-- Klubbens slogan -->
+            <p>Every rally brings us closer.</p>
+
+        </div>
+    </div>
 
     </footer>
     
