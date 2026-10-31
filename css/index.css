@@ -32,6 +32,7 @@
     font-size: 36px;
     line-height: 1.2;
     color: #18324A;
+    max-width: 15ch;
 }
 
 /* Hero beskrivning */
@@ -57,6 +58,7 @@
     height: auto;
     border-radius: 20px;
     object-fit: cover;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -106,8 +108,7 @@
     color: #18324A;
     font-size: 16px;
     line-height: 1.6;
-    max-width: 45ch;
-    text-align: left;
+    max-width: 400px;
  
 }
 
@@ -164,7 +165,6 @@
 
 /* Bakgrund, avstånd och border-line för sektionen */
 .home-events {
-    background-color: #F7F8F5;
     padding-block: 48px;
     border-bottom:1px #B9B9B9 solid;
 }
@@ -311,7 +311,6 @@
 
 /* Avstånd runt CTA-sektionen */
 .home-cta {
-    background-color: #F7F8F5;
     padding-block: 48px;
 }
 
