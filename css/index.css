@@ -393,3 +393,164 @@
         font-size: 34px;
     }
 }
+
+
+
+
+
+
+
+
+
+/* =========================
+   LAPTOP – 900px
+========================= */
+
+@media (min-width: 900px) {
+
+    /* =========================
+       HOME HERO
+    ========================= */
+
+    /* Kolummer layout för text och bild */
+    .hero-layout {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 32px;
+        padding-block: 64px;
+    }
+
+    /* Responsiv huvudrubrik */
+    .hero-content h1 {
+        font-size: clamp(40px, 4vw, 56px);
+        line-height: 1.1;
+    }
+
+    /* Knapplayout */
+    .hero-actions {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    /* =========================
+       HOME ABOUT
+    ========================= */
+
+    /* Layout för text och kort */
+    .about-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    /* Kolummer layout för informationskorten */
+    .about-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    /* About-bilder */
+    .about-card-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+    }
+
+    /* About-sektionens rubrik */
+    .about-content h2 {
+        font-size: clamp(36px, 4vw, 46px);
+        line-height: 1.1;
+        max-width: 600px;
+    }
+
+    /* Informationskortens beskrivning */
+    .about-card-content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* =========================
+       UPCOMING EVENTS
+    ========================= */
+
+    /* Evenemangskortens layout */
+    .event-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  Textinnehållet */
+    .event-card-content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 20px;
+    }
+
+    /* Centrera rubrik och beskrivning */
+    .event-card-content h3,
+    .event-card-content p {
+        text-align: center;
+    }
+
+    /* Placera detaljlänken längst ned till höger */
+    .event-card-content a {
+        align-self: flex-end;
+        margin-top: auto;
+    }
+
+    /* Anpassad datumetikett */
+    .event-date {
+        padding: 6px 10px;
+    }
+
+    /* Datumets dag */
+    .event-day {
+        font-size: 18px;
+    }
+
+    /* Datumets månad*/
+    .event-month {
+        font-size: 11px;
+    }
+
+
+    /* =========================
+       HOME CTA
+    ========================= */
+
+    /* Kolummer layout för text och bild */
+    .cta-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+        align-items: center;
+        gap: 24px;
+        padding: 40px 32px;
+    }
+
+    /* Visa CTA-bilden på laptop */
+    .cta-layout > img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    /* Anpassad textplacering */
+    .cta-content {
+        padding-left: 0;
+    }
+
+    /* CTA-sektionens rubrik */
+    .cta-content h2 {
+        font-size: clamp(32px, 3.5vw, 42px);
+        max-width: 430px;
+    }
+}
+
