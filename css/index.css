@@ -305,11 +305,63 @@
 }
 
 
+/* ==================================
+   4. CTA SEKTIONEN - MOBILE FIRST
+=====================================*/
 
+/* Avstånd runt CTA-sektionen */
+.home-cta {
+    background-color: #F7F8F5;
+    padding-block: 48px;
+}
 
+/* CTA-sektionens layout och bakgrund */
+.cta-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
 
+    background-color: #FFBF00;
+    border-radius: 20px;
+    padding: 32px 20px;
+}
 
+/* CTA-sektionens textlayout */
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
 
+/* Tag */
+.cta-content .tag {
+    color: #2E7D5B;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Sektionens huvudrubrik */
+.cta-content h2 {
+    color: #18324A;
+    font-size: 32px;
+    line-height: 1.2;
+    max-width: 300px;
+}
+
+/* CTA-sektionens beskrivning */
+.cta-content > p:not(.tag) {
+    color: #18324A;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 35ch;
+}
+
+/* Dölj CTA-bilden på mobil */
+.cta-layout > img {
+  display: none;
+}
 
 
 
