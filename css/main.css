@@ -36,6 +36,13 @@ h1, h2, h3 {
   3. GLOBAL CONTAINER
 ================================= */
 
+/*. */
+.content-container{
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 20px;
+}
 
 
 
