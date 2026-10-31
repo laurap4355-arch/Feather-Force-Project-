@@ -1,0 +1,50 @@
+/* =============================
+   1. HERO - SEKTION - MOBILE FIRST
+================================ */
+
+/* Events Hero-sektionens bakgrund och avstånd */
+.events-hero {
+    padding-block: 48px;
+}
+
+/* Hero-sektionens layout */
+.events-hero-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: center;
+}
+
+/* Hero-sektionens huvudrubrik */
+.events-hero-content h1 {
+    max-width: 480px;
+    margin: 12px 0 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 44px;
+    line-height: 1;
+}
+
+/* Hero-sektionens beskrivande text */
+.events-hero-content > p:not(.tag) {
+    max-width: 560px;
+    color: #18324A;
+}
+
+/* Knapparnas layout och avstånd */
+.events-hero .hero-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+/* Hero-bildens storlek och utseende */
+.events-hero-layout > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
