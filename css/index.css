@@ -458,6 +458,13 @@
 
 @media (min-width: 1200px) {
 
+    /* Anpassad innehållsbredd för större skärmar */
+    .content-container {
+     max-width: 2500px;
+     padding-inline: 40px;
+    }
+
+
     /* =====================================
        HOME HERO SECTION - STÖRRE DESKTOP
     ======================================== */
