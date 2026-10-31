@@ -12,6 +12,10 @@
     <!--  Javascript Filer -->
      <script src="../js/main.js" defer></script>
 
+    <!-- Ikoner -->
+     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css">
+
     
     <!-- Google Fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -117,15 +121,222 @@
             </div>
         </section>
 
+
+        <!-- Kontaktsektion med klubbinformation och formulär -->
+        <section class="contact-section" id="contact-form">
+
+            <!-- Container för contact formulär innehåll -->
+            <div class="content-container">
+
+                <!-- Sektionens rubrik och introduktion -->
+                <div class="contact-heading">
+                    
+                    <!-- TAG -->
+                    <p class="tag">CONTACT &amp; MEMBERSHIP</p>
+
+                    <!-- Sektionens rubrik -->
+                    <h2>Let's Get You on Court.</h2>
+
+                    <!-- Sektionens beskrivning-->
+                    <p>Ask us anything or tell us you'd like to join. Choose what works for you.</p>
+                </div>
+
+    
+                <!-- Layout med informationskort och formulär -->
+                <div class="contact-layout">
+
+                    <!-- Klubbens kontaktinformation -->
+                    <aside class="contact-info">
+      
+                        <!-- TAG -->
+                        <p class="tag">WE'RE HERE TO HELP</p>
+      
+                        <!-- Sektionens rubrik -->
+                        <h3>More Than a Club. A Community.</h3>
+      
+                        <!-- Sektionens beskrivning -->
+                        <p>Every player starts somewhere. We're happy to answer questions and help you feel at home.</p>
+
+    
+                        <!-- Lista över kontaktämnen --> 
+                        <ul class="contact-info-list">
+       
+                        <!-- Kontaktämne 1: General Questions -->
+                           <li class="contact-info-item">
+                               <!-- Ikon för e-post -->
+                                 <span class="contact-info-icon" aria-hidden="true">
+                                    <i class="fi fi-sr-envelope"></i>
+                                </span>
+                                    
+
+                             <!-- Kontaktämnets textinnehåll -->
+                             <div>
+                                    <!-- Kontaktämnets rubrik -->
+                                    <h4>General Questions</h4>
+                                    
+                                    <!-- Beskrivning av allmänna frågor -->
+                                    <p>Ask about sessions, events, membership, or anything else.</p>
+                             </div>
+                          </li>
+
+
+                        <!-- Kontaktämne 2: New To Badminton? -->
+    
+                        <li class="contact-info-item">
+
+                            <!-- Badmintonikon -->    
+                            <span class="contact-info-icon" aria-hidden="true">
+                                <i class="fi fi-rr-badminton"></i>
+                            </span>
+
+                            <!-- Kontaktämnets textinnehåll -->    
+                            <div>
+
+                                <!-- Kontaktämnets rubrik -->
+                                <h4>New to Badminton?</h4>
+
+                                <!-- Information för nybörjare -->    
+                                <p>All experience levels are welcome. Start at your own pace.</p>
+                            </div>
+    
+                        </li>
+
+                        <!-- Kontaktämne 3: Meet the Community -->
+                        <li class="contact-info-item">
+       
+                            <!-- Ikon för gemenskap -->       
+                            <span class="contact-info-icon" aria-hidden="true">
+                                <i class="fi fi-sr-users-alt"></i>
+                            </span>
+
+                            <!-- Kontaktämnets textinnehåll -->       
+                            <div>
+
+                                <!-- Kontaktämnets rubrik -->
+                                <h4>Meet the Community</h4>
+
+                                <!-- Beskrivning av klubbens gemenskap -->
+                                <p>Make friends, build skills, and enjoy every rally together.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Information om kommande kontaktuppgifter -->
+                    <p class="contact-note">
+                        Contact email and social links can be added once
+                        the club's official details are available.
+                    </p>
+                 </aside>
+
+     
+                
+                 <!-- Formulär för frågor och medlemsförfrågningar -->
+    
+                 <div class="contact-form-card">
+                     <!-- TAG -->
+                     <p class="tag">YOUR NEXT STEP</p>
+    
+                     <!-- Formulärets huvudrubrik -->
+                     <h3>How Can We Help?</h3>
+    
+                     <!-- Formulärets beskrivning -->
+                     <p>Choose an option below to create a message or membership enquiry.</p>
+        
+                     <!-- Knappar för val av förfrågningstyp -->
+                     <div class="form-options">
+                         <!-- Alternativ för kontaktförfrågan -->
+                         <button type="button" aria-pressed="true">Contact Us</button>
+                         <button type="button" aria-pressed="false">Join the Club</button>
+                     </div>
+
+                     <!-- Kontaktformulärets fält -->
+                     <form class="contact-form">
+                         <!-- Fält för fullständigt namn -->
+                         <div class="form-field">
+                             <!-- Etikett för namn -->
+                             <label for="full-name">Full Name *</label>
+    
+                             <!-- Obligatoriskt namnfält -->    
+                             <input type="text" id="full-name" name="full-name" required>
+                         </div>
+
+                         <!-- Fält för e-postadress -->    
+                         <div class="form-field">
+                             <!-- Etikett för e-postadress -->
+                             <label for="email">Email Address *</label>
+
+                             <!-- Obligatoriskt e-postfält -->    
+                             <input type="email" id="email" name="email" required>
+                         </div>
+
+    
+                         <!-- Fält för spelarens erfarenhetsnivå -->
+                         <div class="form-field">
+                             <!-- Etikett för spelnivå -->
+                             <label for="playing-level">Your Playing Level *</label>
+
+                             <!-- Obligatorisk lista över spelnivåer -->
+    
+                             <select id="playing-level" name="playing-level" required>
+                                
+                                  <!-- Standardalternativ -->    
+                                 <option value="">Select your level</option>
+
+                                 <!-- Nybörjarnivå -->    
+                                 <option value="beginner">Beginner</option>
+    
+                                 <!-- Medelnivå -->
+                                 <option value="intermediate">Intermediate</option>
+    
+                                 <!-- Erfaren spelare -->
+                                 <option value="experienced">Experienced</option>
+                              </select>
+                         </div>
+
+                         <!-- Fält för spelarens intresseområde -->    
+                         <div class="form-field">
+                             <!-- Etikett för intresseområde -->
+                             <label for="interest">What Interests You Most?</label>
+     
+                             <!-- Lista över klubbens aktiviteter -->
+                             <select id="interest" name="interest">
+                                 <!-- Sociala aktiviteter -->    
+                                 <option value="social">Casual games &amp; friendships</option>
+ 
+                                 <!-- Träning -->    
+                                 <option value="training">Training</option>
+    
+                                 <!-- Turneringar -->
+                                 <option value="tournaments">Tournaments</option>
+                              </select>
+                           </div>
+
+                          <!-- Fält för ytterligare information -->    
+                          <div class="form-field form-field-full">
+                             <!-- Etikett för meddelande --> 
+                             <label for="message">Anything You'd Like Us to Know?</label>
+
+                             <!-- Textfält för meddelande -->    
+                             <textarea id="message" name="message"></textarea>
+                         </div>
+
+                         <!-- Samtycke till behandling av kontaktuppgifter -->    
+                         <label class="consent-field">
+                             <!-- Obligatorisk kryssruta för samtycke -->    
+                             <input type="checkbox" name="consent" required>
+
+                             <!-- Information om samtycke -->    
+                             I agree to share these details so Feather Force can respond to my enquiry.
+                         </label>
+
+                         <!-- Knapp för att skicka formuläret -->    
+                         <button class="button button-primary" type="submit"> Prepare Join Request &rarr; </button>
+                        </form>
+                   </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-
-
-
-
-
-
-
 
 
 
