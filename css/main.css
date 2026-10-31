@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F7F8F5 ;
+
 }
 
 /* ==============================
@@ -26,9 +26,16 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
+/* Gemnsam typografi för alla tags */
+.tag{
+    font-family: "Poppins",sans-serif;
+}
+
+
 /* ==============================
   3. GLOBAL CONTAINER
 ================================= */
+
 
 
 
