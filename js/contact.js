@@ -304,3 +304,42 @@ contactForm.addEventListener("submit", function(event) {
     contactForm.after(preview);
 
 });
+
+
+
+/* =============================================
+   CONTACT - FAQ
+============================================= */
+
+// Hämta alla FAQ-knappar
+const faqButtons = document.querySelectorAll(".faq-question");
+
+// Gå igenom alla knappar
+faqButtons.forEach(function(button) {
+
+    // Lyssna efter klick
+    button.addEventListener("click", function() {
+
+        // Hämta svarens ID
+        const answerId = button.getAttribute("aria-controls");
+
+        // Hämta rätt svar
+        const answer = document.getElementById(answerId);
+
+        // Kontrollera om svaret är dolt
+        if (answer.hidden === true) {
+
+            // Visa svaret
+            answer.hidden = false;
+            button.setAttribute("aria-expanded", "true");
+
+        } else {
+
+            // Dölj svaret
+            answer.hidden = true;
+            button.setAttribute("aria-expanded", "false");
+        }
+
+    });
+
+});
