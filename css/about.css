@@ -267,15 +267,19 @@
 ============================================= */
 
 /* Sektionens bakgrund, avstånd och textcentrering */
-.about-cta {
-    padding: 64px 0;
-    background-color: #FFBF00;
-    text-align: center;
-}
 
+.about-cta {
+  padding: 64px 0;
+  text-align: center;
+}
 /* Maximal bredd för CTA-sektionens innehåll */
 .about-cta .cta-content {
-    max-width: 760px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px, auto;
+  padding: 52px 32px;
+  border-radius: 15px;
+  background-color: #ffbf00;
 }
 
 /* Etikettens typografi och avstånd */
@@ -296,4 +300,232 @@
     max-width: 600px;
     margin: 0 auto 20px;
     font-size: 16px;
+}
+
+
+
+/* =========================
+   TABLET – 768px
+========================= */
+
+@media (min-width: 768px) {
+
+   /* Begränsar CTA-sektionens bredd och centrerar den på sidan */
+  .about-cta {
+     max-width: 720px;
+     margin: 40px auto;
+     border-radius: 15px;}
+
+  /* Ger Hero-sektionen mer vertikalt utrymme */
+  .about-hero {
+    padding: 72px 0;
+  }
+
+  /* Placerar Hero-texten och bilden i två kolumner */
+  .about-hero-layout {
+     grid-template-columns: 1fr 1fr;
+     gap: 36px;
+  }
+
+  /* Ökar rubrikens storlek på surfplattor */
+  .about-hero-content h1 {
+     font-size: 50px;
+  }
+
+  /* Placerar Hero-knapparna bredvid varandra */
+  .about-hero .hero-actions {
+     flex-direction: row;
+     flex-wrap: wrap;
+  }
+
+  /* Ger Story-sektionen mer vertikalt utrymme */
+  .about-story {
+     padding: 72px 0;
+  }
+
+  /* Placerar Story-bilden och texten i två kolumner */
+  .story-layout {
+     grid-template-columns: 1fr 1fr;
+     gap: 36px;
+  }
+
+  /* Ökar Story-rubrikens storlek */
+  .story-content h2 {
+     font-size: 38px;
+  }
+
+  /* Ger värderingssektionen mer vertikalt utrymme */
+  .club-values {
+     padding: 72px 0;
+  }
+
+  /* Visar värderingskorten i två kolumner */
+  .values-grid {
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Ökar rubrikens storlek ovanför värderingskorten */
+  .values-heading h2 {
+     font-size: 36px;
+  }
+
+  /* Ger Community-sektionen mer vertikalt utrymme */
+  .about-community {
+     padding: 72px 0;
+  }
+
+  /* Behåller två kolumner för community-korten */
+  .community-grid {
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Ökar rubrikens storlek ovanför community-korten */
+  .community-heading h2 {
+     font-size: 36px;
+  }
+
+  /* Ger CTA-sektionen mer vertikalt utrymme */
+  .about-cta {
+     padding: 72px 0;
+  }
+
+  /* Ökar CTA-rubrikens storlek */
+  .about-cta h2 {
+     font-size: 38px;
+  }
+}
+
+
+/* =========================
+   LAPTOP – 900px
+========================= */
+
+@media (min-width: 900px) {
+
+  /* Begränsar CTA-sektionens bredd och centrerar den på sidan */
+  .about-cta {
+      max-width: 950px;
+     margin: 40px auto;
+     border-radius: 15px;}
+
+  /* Ökar avståndet mellan Hero-texten och bilden */
+  .about-hero-layout {
+     gap: 48px;
+  }
+
+  /* Ökar Hero-rubrikens storlek */
+  .about-hero-content h1 {
+     font-size: 56px;
+  }
+
+  /* Ökar avståndet mellan Story-bilden och texten */
+  .story-layout {
+     gap: 48px;
+  }
+
+  /* Visar värderingskorten i tre kolumner */
+  .values-grid {
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+     gap: 20px;
+  }
+
+  /* Ger värderingskorten mer inre utrymme */
+  .value-card {
+     padding: 28px;
+  }
+
+  /* Visar community-korten i fyra kolumner */
+  .community-grid {
+     grid-template-columns: repeat(4, minmax(0, 1fr));
+     gap: 20px;
+  }
+
+  /* Ger Community-bilderna lite mer avstånd till rubrikerna */
+  .community-card img {
+     margin-bottom: 10px;
+  }
+}
+
+
+/* =========================
+   DESKTOP – 1200px
+========================= */
+
+@media (min-width: 1200px) {
+
+   /* Begränsar CTA-sektionens bredd och centrerar den på sidan */
+  .about-cta {
+     max-width: 1200px;
+     margin: 20px auto;
+     border-radius: 15px;}
+  
+
+  /* Anger innehållsbehållarens maximala bredd och inre avstånd */
+  .content-container {
+     max-width: 2500px;
+     padding: 12px;
+  }
+
+  /* Ökar Hero-sektionens vertikala utrymme */
+  .about-hero {
+     padding: 88px 0;
+  }
+
+  /* Ökar avståndet mellan Hero-texten och bilden */
+  .about-hero-layout {
+     gap: 64px;
+  }
+
+  /* Visar Hero-rubriken i större storlek */
+  .about-hero-content h1 {
+     font-size: 60px;
+  }
+
+
+  /* Ökar Story-sektionens vertikala utrymme */
+  .about-story {
+     padding: 88px 0;
+  }
+
+  /* Ökar avståndet mellan Story-bilden och texten */
+  .story-layout {
+     gap: 64px;
+  }
+
+  /* Visar Story-rubriken i större storlek */
+  .story-content h2 {
+     font-size: 42px;
+  }
+
+  /* Ökar värderingssektionens vertikala utrymme */
+  .club-values {
+     padding: 88px 0;
+  }
+
+  /* Visar värderingsrubriken i större storlek */
+  .values-heading h2 {
+     font-size: 40px;
+  }
+
+  /* Ökar Community-sektionens vertikala utrymme */
+  .about-community {
+     padding: 88px 0;
+  }
+
+  /* Visar Community-rubriken i större storlek */
+  .community-heading h2 {
+     font-size: 40px;
+  }
+
+  /* Ökar CTA-sektionens vertikala utrymme */
+  .about-cta {
+     padding: 88px 0;
+  }
+
+  /* Visar CTA-rubriken i större storlek */
+  .about-cta h2 {
+     font-size: 42px;
+  }
+
+
 }

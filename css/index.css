@@ -189,7 +189,6 @@
 /* Tag */
 .section-title .tag {
     color: #2E7D5B;
-    font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -348,9 +347,6 @@
 
 /* Tag */
 .cta-content .tag {
-    color: #2E7D5B;
-    font-size: 14px;
-    font-weight: 600;
     letter-spacing: 1px;
 }
 

@@ -21,7 +21,6 @@
 .events-hero-content h1 {
     max-width: 480px;
     margin: 12px 0 16px;
-    font-family: "Poppins", sans-serif;
     font-size: 44px;
     line-height: 1;
 }
@@ -75,7 +74,6 @@
 /* Sektionens huvudrubrik */
 .events-heading h2 {
     margin: 0 0 12px;
-    font-family: "Poppins", sans-serif;
     font-size: 32px;
     line-height: 1.15;
 }
@@ -83,7 +81,6 @@
 /* Sektionens beskrivande text */
 .events-heading > p:not(.tag) {
     margin: 0;
-    color: #5f6b78;
 }
 
 /* Layout för kategorifiltren */
@@ -97,10 +94,10 @@
 /* Kategoriknapparnas grundutseende */
 .filter-button {
     padding: 10px 16px;
-    border: 1px solid #c5cdd5;
+    border: 1px solid #18324A;
     border-radius: 999px;
     background-color: white;
-    color: #536171;
+    color: #18324A;
     font: inherit;
     cursor: pointer;
 }
@@ -164,7 +161,6 @@
 /* Evenemangskortets rubrik */
 .event-card-content h3 {
     margin: 4px 0 0;
-    font-family: "Poppins", sans-serif;
     font-size: 21px;
     line-height: 1.25;
 }
@@ -176,7 +172,7 @@
 
 /* Typografi för evenemangets datum och plats */
 .event-meta {
-    color: #5f6b78;
+    color: #3b628b;
     font-size: 14px;
 }
 
@@ -216,7 +212,6 @@
 /* Sektionens huvudrubrik */
 .sessions-content h2 {
     margin: 8px 0 16px;
-    font-family: "Poppins", sans-serif;
     font-size: 32px;
     line-height: 1.15;
 }
@@ -325,7 +320,6 @@
 /* CTA-sektionens huvudrubrik */
 .cta-content h2 {
   margin: 0 0 16px;
-  font-family: "Poppins", sans-serif;
   font-size: 34px;
   line-height: 1.1;
 }
@@ -344,3 +338,215 @@
   color: #18324A;
 }
 
+
+/* =========================
+   TABLET – 768px
+========================= */
+
+@media (min-width: 768px) {
+
+    .event-hero{
+        max-width: 720px;
+        margin: 40px auto;
+        border-radius: 15px;
+
+    }
+  /* Ger Hero-sektionen mer vertikalt utrymme */
+  .events-hero {
+       padding-block: 72px;
+  }
+
+  /* Placerar Hero-texten och bilden i två kolumner */
+  .events-hero-layout {
+     grid-template-columns: 1fr 1fr;
+     gap: 36px;
+  }
+
+  /* Ökar Hero-rubrikens storlek */
+  .events-hero-content h1 {
+     font-size: 52px;
+  }
+
+  /* Låter Hero-knapparna flytta till nästa rad om det behövs */
+  .events-hero .hero-actions {
+     flex-wrap: wrap;
+  }
+
+  /* Ger evenemangssektionen mer vertikalt utrymme */
+  .upcoming-events {
+     padding: 64px 0;
+  }
+
+  /* Ökar rubrikens storlek ovanför evenemangen */
+  .events-heading h2 {
+     font-size: 36px;
+  }
+
+  /* Visar evenemangskorten i två kolumner */
+  .event-grid {
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Ger veckosessionssektionen mer vertikalt utrymme */
+  .play-options {
+     padding: 64px 0;
+  }
+
+  /* Placerar sessionsintroduktionen och aktivitetslistan i två kolumner */
+  .sessions-layout {
+     grid-template-columns: 0.9fr 1.1fr;
+     gap: 36px;
+  }
+
+  /* Placerar ikon, aktivitetstext och etikett på samma rad */
+  .session-item {
+     grid-template-columns: 52px minmax(0, 1fr) auto;
+  }
+
+  /* Flyttar aktivitetsetiketten till den sista kolumnen */
+  .session-label {
+     grid-column: auto;
+     text-align: right;
+  }
+
+  /* Ger CTA-sektionen mer vertikalt utrymme */
+  .cta-events {
+     padding: 64px 0;
+  }
+
+  /* Placerar CTA-bilden och innehållet i två kolumner */
+  .cta-layout {
+     grid-template-columns: 1fr 1fr;
+     gap: 32px;
+     padding: 28px;
+  }
+
+  /* Ökar CTA-rubrikens storlek */
+  .cta-content h2 {
+     font-size: 38px;
+  }
+}
+
+
+/* =========================
+   LAPTOP – 900px
+========================= */
+
+@media (min-width: 900px) {
+
+   /* Begränsar CTA-sektionens bredd och centrerar den på sidan */
+  .about-cta {
+     max-width: 950px;
+     margin: 40px auto;
+     border-radius: 15px;}
+
+  /* Ökar avståndet mellan Hero-texten och bilden */
+  .events-hero-layout {
+     gap: 48px;
+  }
+
+  /* Ökar Hero-rubrikens storlek */
+  .events-hero-content h1 {
+     font-size: 56px;
+  }
+
+  /* Visar evenemangskorten i tre kolumner */
+  .event-grid {
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+     gap: 24px;
+  }
+
+  /* Ökar avståndet mellan sessionsintroduktionen och aktivitetslistan */
+  .sessions-layout {
+     gap: 48px;
+  }
+
+  /* Ger CTA-bilden och texten mer utrymme */
+  .cta-layout {
+     gap: 40px;
+     padding: 36px;
+  }
+}
+
+
+/* =========================
+   DESKTOP – 1200px
+========================= */
+
+@media (min-width: 1200px) {
+
+ /* Anger innehållsbehållarens maximala bredd och inre avstånd */
+  .content-container {
+     max-width: 2500px;
+     padding: 12px;
+  }
+
+  /* Ökar Hero-sektionens vertikala utrymme */
+  .events-hero {
+     padding-block: 88px;
+  }
+
+  /* Ökar avståndet mellan Hero-texten och bilden */
+  .events-hero-layout {
+     gap: 64px;
+  }
+
+  /* Visar Hero-rubriken i större storlek */
+  .events-hero-content h1 {
+     font-size: 64px;
+  }
+
+  /* Ökar evenemangssektionens vertikala utrymme */
+  .upcoming-events {
+     padding: 80px 0;
+  }
+
+  /* Ökar rubrikens storlek ovanför evenemangen */
+  .events-heading h2 {
+     font-size: 42px;
+  }
+
+  /* Ökar avståndet mellan evenemangskorten */
+  .event-grid {
+     gap: 28px;
+  }
+
+  /* Ökar veckosessionssektionens vertikala utrymme */
+  .play-options {
+     padding: 88px 0;
+  }
+
+  /* Ökar rubrikens storlek i sessionssektionen */
+  .sessions-content h2 {
+     font-size: 42px;
+  }
+
+  /* Ger aktivitetsraderna mer utrymme */
+  .session-item {
+     grid-template-columns: 60px minmax(0, 1fr) auto;
+     gap: 16px;
+     padding: 20px;
+  }
+
+  /* Ökar ikonens storlek för stora skärmar */
+  .session-icon {
+     width: 60px;
+     height: 60px;
+  }
+
+  /* Ökar CTA-sektionens vertikala utrymme */
+  .cta-events {
+     padding: 80px 0;
+  }
+
+  /* Ger CTA-layouten mer mellanrum och inre utrymme */
+  .cta-layout {
+     gap: 48px;
+     padding: 40px;
+  }
+
+  /* Visar CTA-rubriken i större storlek */
+  .cta-content h2 {
+     font-size: 42px;
+  }
+}

@@ -120,7 +120,7 @@
 .contact-info,
 .contact-form-card {
     padding: 16px;
-    border: 1px solid #d8e0e6;
+    border: 1px solid #babfc4;
     border-radius: 12px;
     box-shadow: 0 2px 5px rgb(24 50 74 / 8%);
 }
@@ -164,7 +164,7 @@
 
 /* Avskiljande linje mellan kontaktämnen */
 .contact-info-item + .contact-info-item {
-    border-top: 1px solid #e4e9ed;
+    border-top: 1px solid #babfc4;
 }
 
 /* Kontaktikonens storlek och utseende */
@@ -213,7 +213,7 @@
 .form-option {
     min-height: 40px;
     padding: 8px;
-    border: 1px solid #d3dce4;
+    border: 1px solid #babfc4;
     border-radius: 6px;
     background-color: #f5f7f8;
     color: #18324a;
@@ -260,7 +260,7 @@
     width: 100%;
     min-height: 36px;
     padding: 8px 10px;
-    border: 1px solid #d3dce4;
+    border: 1px solid #babfc4;
     border-radius: 5px;
     color: #18324a;
     font-size: 12px;
@@ -372,7 +372,7 @@
 /* Stegkortets utseende och inre avstånd */
 .step-card {
   padding: 22px;
-  border: 1px solid #cbd3dc;
+  border: 1px solid #babfc4;
   border-radius: 12px;
   background-color: #ffffff;
 }
@@ -445,7 +445,7 @@
 /* Avgränsning mellan FAQ-frågorna */
 .faq-item {
   padding: 16px 0;
-  border-bottom: 1px solid #d8e0e6;
+  border-bottom: 1px solid #babfc4;
 }
 
 /* Frågerubriken tar bort standardmarginalen */
@@ -498,4 +498,273 @@
 /* Dolt svar visas inte */
 .faq-answer[hidden] {
   display: none;
+}
+
+
+/* =========================
+   TABLET – 768px
+========================= */
+
+@media (min-width: 768px) {
+
+  /* Ökar det vertikala avståndet i Hero-sektionen */
+  .contact-hero {
+     padding: 64px 0;
+  }
+
+  /* Placerar text och bild i två kolumner */
+  .contact-hero-layout {
+     grid-template-columns: 1fr 1fr;
+     gap: 36px;
+  }
+
+  /* Ökar Hero-rubrikens storlek */
+  .contact-hero-content h1 {
+     font-size: 46px;
+  }
+
+  /* Placerar knapparna bredvid varandra */
+  .contact-hero .hero-actions {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+  }
+
+  /* Justerar knapparnas bredd och inre avstånd */
+  .contact-hero .hero-actions .button {
+     width: auto;
+     padding: 12px 16px;
+  }
+
+  /* Ökar det vertikala avståndet i kontaktsektionen */
+  .contact-section {
+     padding: 64px 0;
+  }
+
+  /* Ökar rubrikens storlek */
+  .contact-heading h2 {
+     font-size: 32px;
+  }
+
+  /* Placerar kontaktinformationen och formuläret i två kolumner */
+  .contact-layout {
+     grid-template-columns: 0.9fr 1.1fr;
+     gap: 20px;
+  }
+
+  /* Ökar det inre avståndet i informationskortet */
+  .contact-info {
+    padding: 20px;
+  }
+
+  /* Ökar det inre avståndet i formulärkortet */
+  .contact-form-card {
+    padding: 20px;
+  }
+
+  /* Placerar formulärfälten i två kolumner */
+  .contact-form {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  /* Låter meddelandefältet sträcka sig över hela formulärets bredd */
+  .form-field-full {
+     grid-column: 1 / -1;
+  }
+
+  /* Låter samtyckesfältet sträcka sig över hela formulärets bredd */
+  .consent-field {
+     grid-column: 1 / -1;
+  }
+
+  /* Låter skicka-knappen sträcka sig över hela formulärets bredd */
+  .form-submit {
+     grid-column: 1 / -1;
+  }
+
+  /* Ökar det vertikala avståndet i stegsektionen */
+  .joining-steps {
+     padding: 64px 0;
+  }
+
+  /* Visar två stegkort per rad */
+  .steps-grid {
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+     gap: 18px;
+  }
+
+  /* Ökar rubrikens storlek */
+  .steps-heading h2 {
+     font-size: 36px;
+  }
+
+  /* Ökar det vertikala avståndet i FAQ-sektionen */
+  .contact-faq {
+     padding: 64px 0;
+  }
+
+  /* Placerar introduktionen och frågorna i två kolumner */
+  .faq-layout {
+     grid-template-columns: 0.8fr 1.2fr;
+     gap: 36px;
+  }
+
+  /* Ökar FAQ-rubrikens storlek */
+  .faq-intro h2 {
+     font-size: 38px;
+  }
+
+  /* Ökar det vertikala avståndet i CTA-sektionen */
+  .contact-cta {
+     padding: 64px 0;
+  }
+}
+
+
+/* =========================
+   LAPTOP – 900px
+========================= */
+
+@media (min-width: 900px) {
+
+  /* Ökar det vertikala avståndet i Hero-sektionen */
+  .contact-hero {
+     padding: 76px 0;
+  }
+
+  /* Ökar avståndet mellan texten och bilden */
+  .contact-hero-layout {
+     gap: 48px;
+  }
+
+  /* Ökar Hero-rubrikens storlek */
+  .contact-hero-content h1 {
+      font-size: 54px;
+  }
+
+  /* Ökar avståndet mellan kontaktinformationen och formuläret */
+  .contact-layout {
+     gap: 24px;
+  }
+
+  /* Ger informationskortet mer inre utrymme */
+  .contact-info {
+     padding: 24px;
+  }
+
+  /* Ger formulärkortet mer inre utrymme */
+  .contact-form-card {
+     padding: 24px;
+  }
+
+  /* Ökar rubrikens storlek i informationskortet */
+  .contact-info h3 {
+     font-size: 23px;
+  }
+
+  /* Ökar rubrikens storlek i formulärkortet */
+  .contact-form-card h3 {
+     font-size: 23px;
+  }
+
+  /* Visar alla tre stegkort på samma rad */
+  .steps-grid {
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+     gap: 18px;
+  }
+
+  /* Ger varje stegkort mer inre utrymme */
+  .step-card {
+     padding: 24px;
+  }
+
+  /* Ökar avståndet mellan introduktionen och frågorna */
+  .faq-layout {
+     gap: 48px;
+  }
+}
+
+
+/* =========================
+   DESKTOP – 1200px
+========================= */
+
+@media (min-width: 1200px) {
+
+  /* Anger innehållsbehållarens maximala bredd och inre avstånd */
+  .content-container {
+     max-width: 2500px;
+     padding: 12px;
+  }
+
+  /* Ökar det vertikala avståndet i Hero-sektionen */
+  .contact-hero {
+     padding: 88px 0;
+  }
+
+  /* Ökar avståndet mellan texten och bilden */
+  .contact-hero-layout {
+     gap: 64px;
+  }
+
+  /* Ökar Hero-rubrikens storlek */
+  .contact-hero-content h1 {
+     font-size: 60px;
+  }
+
+  /* Ökar det vertikala avståndet i kontaktsektionen */
+  .contact-section {
+     padding: 80px 0;
+  }
+
+  /* Ökar avståndet mellan kontaktinformationen och formuläret */
+  .contact-layout {
+     gap: 28px;
+  }
+
+  /* Ger informationskortet extra inre utrymme */
+  .contact-info {
+     padding: 28px;
+  }
+
+  /* Ger formulärkortet extra inre utrymme */
+  .contact-form-card {
+     padding: 28px;
+  }
+
+  /* Ökar höjden på textfälten */
+  .form-field input {
+     min-height: 42px;
+  }
+
+  /* Ökar höjden på rullgardinsmenyerna */
+  .form-field select {
+     min-height: 42px;
+  }
+
+  /* Ökar det vertikala avståndet i stegsektionen */
+  .joining-steps {
+     padding: 80px 0;
+  }
+
+  /* Ökar avståndet mellan stegkorten */
+  .steps-grid {
+     gap: 20px;
+  }
+
+  /* Ökar det vertikala avståndet i FAQ-sektionen */
+  .contact-faq {
+     padding: 80px 0;
+  }
+
+  /* Ökar avståndet mellan introduktionen och frågorna */
+  .faq-layout {
+     gap: 64px;
+  }
+
+  /* Ökar det vertikala avståndet i CTA-sektionen */
+  .contact-cta {
+     padding: 80px 0;
+  }
 }

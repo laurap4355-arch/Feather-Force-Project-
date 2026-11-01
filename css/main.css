@@ -23,7 +23,7 @@ body{
 }
 
 /* Gemensam typografi för alla rubriker */
-h1, h2, h3 {
+h1, h2, h3, h4{
     font-family: "Poppins", sans-serif ;
     font-weight: 600;
 }
@@ -31,6 +31,8 @@ h1, h2, h3 {
 /* Gemnsam typografi för alla tags */
 .tag{
     font-family: "Poppins",sans-serif;
+    color: #2E7D5B;
+    font-size: 14px;
 }
 /*=============================================================*
 
@@ -84,14 +86,14 @@ h1, h2, h3 {
 /* Aktivt tillstånd för primära knappar */
 .button-primary:active{
     background-color: #1B5E40;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
     color: white;
 }
 
 /* Aktivt tillstånd för sekundär knappar */
 .button-secondary:active{
     background-color: rgba(255, 246, 246, 0.703);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 /*=============================================================*
 
