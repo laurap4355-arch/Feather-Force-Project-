@@ -141,9 +141,9 @@
     line-height: 1.5;
 }
 
-/* =============================================
-   KONTAKTINFORMATION
-============================================= */
+/* ===============================================
+   3. CONTACT INFORMATION - Sektion  MOBILE FIRST
+=============================================== */
 
 /* Lista över klubbens kontaktämnen */
 .contact-info-list {
@@ -198,7 +198,7 @@
 }
 
 /* =============================================
-   VAL AV FÖRFRÅGNINGSTYP
+   3. VAL AV FÖRFRÅGNINGSTYP - MObILE FIRST
 ============================================= */
 
 /* Tvåspaltig layout för formuläralternativen */
@@ -230,7 +230,7 @@
 }
 
 /* =============================================
-   KONTAKTFORMULÄR
+   4. KONTAKTFORMULÄR - MOBILE FIRST
 ============================================= */
 
 /* Enspaltig layout för formulärets fält */
@@ -302,7 +302,7 @@
 }
 
 /* =============================================
-   FORMULÄRETS SKICKA-KNAPP
+   5. FORMULÄRETS SKICKA-KNAPP - MOBILE FIRST
 ============================================= */
 
 /* Layout för formulärets avslutande innehåll */
@@ -328,4 +328,73 @@
 }
 
 
+/* =============================================
+   6. JOINING STEPS - MOBILE FIRST
+============================================= */
 
+/* Sektionens bakgrund och avstånd */
+.joining-steps {
+  padding: 56px 0;
+  border-bottom:1px #B9B9B9 solid;
+}
+
+/* Rubrikens placering och avstånd till korten */
+.steps-heading {
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+/* Etikettens bokstavsavstånd */
+.steps-heading .tag {
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/* Huvudrubrikens storlek och avstånd */
+.steps-heading h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+/* Introduktionstextens  storlek */
+.steps-heading > p:not(.tag) {
+  font-size: 15px;
+}
+
+/* Ett kort per rad på mobil */
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* Stegkortets utseende och inre avstånd */
+.step-card {
+  padding: 22px;
+  border: 1px solid #cbd3dc;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+/* Stegets nummer och etikett */
+.step-label {
+  margin-bottom: 6px;
+  color: #2e7d5b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* Stegkortets rubrik */
+.step-card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+/* Stegkortets beskrivning */
+.step-card > p:not(.step-label) {
+  font-size: 14px;
+  line-height: 1.5;
+}
