@@ -36,3 +36,40 @@ const formNote = document.querySelector(".form-note");
 
 // Kontrollera vilket formulär som är aktivt
 let isJoinForm = false;
+
+
+/* =============================================
+   CONTACT - FELMEDDELANDEN
+============================================= */
+
+// Visa felmeddelande
+function showError(input, message) {
+
+    // Lägg till röd kant
+    input.classList.add("is-invalid");
+
+    // Hitta fältets container
+    const field = input.parentElement;
+
+    // Hitta felmeddelandet
+    const error = field.querySelector(".error-message");
+
+    // Visa feltexten
+    error.textContent = message;
+}
+
+// Ta bort felmeddelande
+function clearError(input) {
+
+    // Ta bort röd kant
+    input.classList.remove("is-invalid");
+
+    // Hitta fältets container
+    const field = input.parentElement;
+
+    // Hitta felmeddelandet
+    const error = field.querySelector(".error-message");
+
+    // Ta bort feltexten
+    error.textContent = "";
+}
