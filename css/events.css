@@ -128,7 +128,7 @@
     border: 1px solid #cbd3dc;
     border-radius: 12px;
     background-color: white;
-    box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Evenemangskortets bild */
@@ -275,7 +275,7 @@
 /* Aktivitetens beskrivande text */
 .session-item p {
     margin: 0;
-    color: #5f6b78;
+    color: #345370;
     font-size: 14px;
 }
 
@@ -286,3 +286,61 @@
     font-size: 13px;
     font-weight: 700;
 }
+
+/* =============================================
+   4. CTA EVENTS - SEKTION - MOBILE FIRST
+================================================ */
+
+/* Sektionens avstånd */
+.cta-events {
+  padding: 56px 0;
+}
+
+/* Enspaltig layout för CTA-sektionens innehåll */
+.cta-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #bfbfbf;
+  border-radius: 16px;
+}
+
+/* CTA-bildens storlek och utseende */
+.cta-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Avstånd under sektionens etikett */
+.cta-content .tag {
+  margin-bottom: 8px;
+}
+
+/* CTA-sektionens huvudrubrik */
+.cta-content h2 {
+  margin: 0 0 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 34px;
+  line-height: 1.1;
+}
+
+/* CTA-sektionens beskrivande text */
+.cta-content > p:not(.tag) {
+  color: #18324A;
+}
+
+/* Layout och utseende för medlemsfördelarna lista */
+.cta-content ul {
+  display: grid;
+  gap: 8px;
+  margin: 20px 0;
+  padding-left: 20px;
+  color: #18324A;
+}
+
