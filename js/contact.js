@@ -156,3 +156,85 @@ formButtons.forEach(function(button) {
     });
 
 });
+
+
+
+/* =============================================
+   CONTACT - FORMULÄRVALIDERING
+============================================= */
+
+// Kontrollera formuläret
+function validateForm() {
+
+    let isValid = true;
+
+    // Kontrollera namn
+    if (nameInput.value.trim() === "") {
+
+        showError(nameInput, "Please enter your full name.");
+        isValid = false;
+
+    } else {
+        clearError(nameInput);
+    }
+
+    // Kontrollera e-postadress
+    if (emailInput.value.trim() === "") {
+
+        showError(emailInput, "Please enter your email address.");
+        isValid = false;
+
+    } else if (!emailInput.checkValidity()) {
+
+        showError(emailInput, "Please enter a valid email address.");
+        isValid = false;
+
+    } else {
+        clearError(emailInput);
+    }
+
+    // Kontrollera medlemsformuläret
+    if (isJoinForm) {
+
+        // Kontrollera spelarens nivå
+        if (levelInput.value === "") {
+
+            showError(levelInput, "Please select your playing level.");
+            isValid = false;
+
+        } else {
+            clearError(levelInput);
+        }
+
+        // Kontrollera samtycke
+        const consentError = document.querySelector(
+            ".consent-group .error-message"
+        );
+
+        if (!consentInput.checked) {
+
+            consentInput.classList.add("is-invalid");
+            consentError.textContent = "Please agree before continuing.";
+            isValid = false;
+
+        } else {
+
+            consentInput.classList.remove("is-invalid");
+            consentError.textContent = "";
+        }
+
+    } else {
+
+        // Kontrollera kontaktmeddelandet
+        if (messageInput.value.trim() === "") {
+
+            showError(messageInput, "Please write your message.");
+            isValid = false;
+
+        } else {
+            clearError(messageInput);
+        }
+    }
+
+    return isValid;
+}
