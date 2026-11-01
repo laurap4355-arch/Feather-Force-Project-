@@ -70,6 +70,7 @@
 /* Sektionens avstånd */
 .about-story {
     padding: 56px 0;
+    border-bottom:1px #B9B9B9 solid;
 }
 
 /* Enspaltig layout för Story-sektionens innehåll */
@@ -117,5 +118,81 @@
 /* Avstånd ovanför Story-sektionens knapp */
 .story-content .button {
     margin-top: 4px;
+}
+
+
+/* =============================================
+   3. CLUB VALUES - SEKTION - MOBILE FIRST
+============================================= */
+
+/* Sektionens bakgrund och vertikala avstånd */
+.club-values {
+    padding: 56px 0;
+    background-color: #f5f6f8;
+    border-bottom:1px #B9B9B9 solid;
+
+}
+
+/* Centrering och avstånd för sektionens introduktion */
+.values-heading {
+    margin: 0 auto 36px;
+    text-align: center;
+}
+
+/* Etikettens typografi och avstånd */
+.values-heading .tag {
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Sektionens huvudrubrik */
+.values-heading h2 {
+    margin-bottom: 12px;
+    font-size: 34px;
+    line-height: 1.15;
+}
+
+/* Sektionens beskrivande text */
+.values-heading > p:not(.tag) {
+    font-size: 16px;
+}
+
+/* Enspaltig layout för värderingskorten på mobil */
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Värderingskortets bakgrund, ram och inre avstånd */
+.value-card {
+    padding: 26px;
+    border: 1px solid #c3ccd6;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+/* Värderingskortets ikon */
+.value-card img {
+    display: block;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 18px;
+    object-fit: contain;
+}
+
+/* Värderingskortets rubrik */
+.value-card h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+/* Värderingskortets beskrivande text */
+.value-card p {
+    font-size: 15px;
+    line-height: 1.5;
 }
 
