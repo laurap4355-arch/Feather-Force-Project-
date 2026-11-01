@@ -238,3 +238,69 @@ function validateForm() {
 
     return isValid;
 }
+
+
+
+/* =============================================
+   CONTACT - FÖRBERED MEDDELANDE
+============================================= */
+
+// Lyssna när användaren skickar formuläret
+contactForm.addEventListener("submit", function(event) {
+
+    // Förhindra att sidan laddas om
+    event.preventDefault();
+
+    // Kontrollera formuläret
+    if (validateForm() === false) {
+        return;
+    }
+
+    // Skapa meddelandet
+    let message = "";
+
+    // Lägg till namn och e-post
+    message += "Name: " + nameInput.value + "\n";
+    message += "Email: " + emailInput.value + "\n\n";
+
+    // Kontrollera formulärtypen
+    if (isJoinForm) {
+
+        // Medlemsförfrågan
+        message = "MEMBERSHIP ENQUIRY\n\n" + message;
+
+        message += "Playing Level: " + levelInput.value + "\n";
+        message += "Interest: " + interestInput.value + "\n";
+        message += "Message: " + joinMessageInput.value;
+
+    } else {
+
+        // Kontaktförfrågan
+        message = "CONTACT ENQUIRY\n\n" + message;
+
+        message += "Question: " + questionInput.value + "\n";
+        message += "Message: " + messageInput.value;
+    }
+
+    // Ta bort tidigare förhandsvisning
+    const oldPreview = document.querySelector(".request-preview");
+
+    if (oldPreview) {
+        oldPreview.remove();
+    }
+
+    // Skapa en textruta
+    const preview = document.createElement("textarea");
+
+    // Anpassa textrutan
+    preview.classList.add("request-preview");
+    preview.rows = 10;
+    preview.readOnly = true;
+
+    // Lägg in meddelandet
+    preview.value = message;
+
+    // Visa meddelandet under formuläret
+    contactForm.after(preview);
+
+});
