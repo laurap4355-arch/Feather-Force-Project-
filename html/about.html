@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Feather Force Badminton Club</title>
+
+    <!-- CSS Filer -->
+     <link rel="stylesheet" href ="../css/main.css">
+     <link rel="stylesheet" href ="../css/about.css">
+
+    <!--  Javascript Filer -->
+     <script src="../js/main.js" defer></script>
+
+
+    <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Sidhuvud med logotyp och navigation -->
+    <header class ="site-header">
+
+         <!-- Container för sidhuvudets layout och innehåll -->
+        <div class ="header-container">
+
+            <!-- Logotyp med länk till startsidan -->
+            <a href="index.html" class ="logo">
+
+                <!-- Feather Force-klubbens logotyp -->
+                <img src ="../images/Feather-Force-logo.png"
+                 alt ="Feather Force Badminton Club logo">
+            </a>
+
+            <!-- Hamburgermeny med tillgänglighetsanpassade attribut -->
+            <button class = "menu-toggle"
+                type ="button"  
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+
+                <!-- Hamburgermenyns tre streck -->
+                <span class ="bar1"></span>     
+                <span class = "bar2"></span>    
+                <span class = "bar3"></span>    
+            </button>
+
+            <!-- Huvudnavigation för webbplatsens sidor -->
+            <nav class="navbar" id="primary-navigation" aria-label="Main navigation">
+
+                <!-- Lista med navigationslänkar -->
+                <ul class="nav-list">
+      
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <!-- Länk till kontaktsidan för medlemskap -->
+                    <li><a href="contact.html" class="join-button">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <!-- Sidans huvudsakliga innehåll -->
+    <main class ="about-page" id="about">
+
+        <!-- About hero: Presentera Feather Force -->
+         <section class="about-hero" id="hero">
+
+            <!-- About hero sektionens layout  -->
+            <div class="about-hero-layout content-container" >
+
+                <!-- About hero sektionens: textinnehåll -->
+                <div class="about-hero-content">
+
+                    <!--  TAG -->
+                    <p class="tag">PLAY · CONNECT · GROW</p>
+
+                    <!--  About hero: Rubrik -->
+                    <h1>More Than Just Badminton</h1>
+
+                    <!--  About hero: Beskrivning -->
+                    <p>Feather Force is where a love for badminton turns into lasting friendships. 
+                        Step on court, find your rhythm, and grow with a community that cheers you on.
+                    </p>
+
+                    <!-- About hero: Knappar -->
+                     <div class="hero-actions">
+                        <a href="#story" class="button button-primary">DISCOVER OUR STORY </a>
+                        <a href="#cta" class="button button-secondary">JOIN OUR COMMUNITY </a>
+                     </div>
+                </div>
+
+                <!--  About hero: Bilden -->
+                  <img src="../images/about-page-hero-img.png" 
+                  alt="Feather Force badminton team celebrating a tournament victory with a trophy">
+            </div>
+         </section>
+
+         
+         <!-- About sidan: Story sektionen -->
+         <section class="about-story" id="story">
+
+            <!-- Layout för story sektionen -->
+            <div class="story-layout content-container">
+
+                <!-- Story sektionen: Bild -->
+                <img src="../images/storyline-storySection-img.png" 
+                 alt="Feather Force badminton club's journey from its 
+                 first court to a growing community and tournament victory"
+                >
+
+                <!-- Story sektionen: Textinnehåll -->
+                 <div class="story-content">
+                    
+                    <!-- TAG -->
+                    <p class="tag">OUR STORY</p>
+
+                    <!--  Story sektionen: Rubrik -->
+                    <h2>Built by Passion, United by Badminton</h2>
+
+                    <!--  Story sektionen: Beskrivning -->
+                    <p>Feather Force brings together people who share one simple joy: playing badminton. 
+                        Whether it is your first rally or your hundredth match, there is a place for you here.
+                    </p>
+
+                    <p>We believe the best part of the game is not just the score — it is
+                        the friendships, encouragement, and memories we create along the way.
+                    </p>
+
+                    <!--  Story sektionen: Knapp -->
+                    <a href="#values" class="button button-secondary" >What We Believe &rarr;</a>
+                 </div>
+            </div>
+         </section>
+
+
+        <!-- Values sektionen -->
+        <section class="club-values" id="values">
+         
+            <!-- Container för Values-sektionens innehåll -->
+            <div class="content container">
+
+                <!-- Values sektionens: Header -->
+                <div class="values-heading">
+                    <!--  TAG -->
+                    <p class="tag">WHAT DRIVES US</p>
+                    
+                    <!--  Values sektionen: Huvudrubrik -->
+                    <h2>What Makes Us Feather Force</h2>
+
+                    <!--  Values sektionens: Klubbens värderingar -->
+                    <p>Three things that make every rally mean more. </p>
+                </div>
+
+                <!-- Rutnätslayout för value cards -->
+                <div class="values-grid">
+
+                    <!-- Kort 1: Friendship -->
+                    <article class="value-card">
+                        
+                        <!-- Kort 1: Ikon -->
+                        <img src="../images/about-icon1.png" alt="">
+
+                        <!-- Kort 1: Rubrik-->
+                        <h3>Friendship</h3>
+
+                        <!-- Kort 1: Beskrivning -->
+                        <p>Meet new people, share great moments, and build 
+                            friendships on and off the court
+                        </p>
+                    </article>
+
+
+                    <!-- Kort 2: Growth -->
+                    <article class="value-card">
+                        
+                        <!-- Kort 2: Ikon -->
+                        <img src="../images/about-icon2.png" alt="">
+
+                        <!-- Kort 2: Rubrik-->
+                        <h3>Growth</h3>
+
+                        <!-- Kort 2: Beskrivning -->
+                        <p>Learn at your own pace, improve your skills,
+                            and celebrate every small win.
+                        </p>
+                    </article>
+
+
+                     <!-- Kort 3: Team Spirit -->
+                    <article class="value-card">
+                        
+                        <!-- Kort 3: Ikon -->
+                        <img src="../images/about-icon3.png" alt="">
+
+                        <!-- Kort 3: Rubrik-->
+                        <h3>Growth</h3>
+
+                        <!-- Kort 3: Beskrivning -->
+                        <p>Encourage one another, play with respect, 
+                            and make everyone feel welcome.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community sektionen -->
+         <section class="about-community" id="community">
+
+            <!-- Container för Community-sektionens innehåll -->
+            <div class="content-container">
+
+                <!-- Community sektionens: Header -->
+                <div class="community-heading">
+
+                    <!-- TAG -->
+                    <p class="tag">OUR COMMUNITY</p>
+
+                    <!--  Community sektionens: Rubrik -->
+                    <h2>Different Players. One Team</h2>
+
+                    <!--  Community sektionens: Beskrivning -->
+                    <p>From first-time players to friendly competitors,
+                        everyone has a place in Feather Force.
+                    </p>
+                </div>
+
+                <!-- Rutnätslayout för value cards -->
+                 <div class="community-grid">
+
+                    <!-- Kort 1: New Players -->
+                    <article class="community-card">
+
+                        <!-- Kort 1: Bilden -->
+                        <img src="../images/person1-team-section.png"
+                        alt="New Feather Force players learning badminton">
+
+                        <!-- Kort 1: Rubrik -->
+                        <h3>New Players</h3>
+
+                        <!--  Kort 1: Beskrivning -->
+                        <p>Start with confidence</p>
+                    </article>
+
+
+                    <!-- Kort 2: Regular Players -->
+                    <article class="community-card">
+
+                        <!-- Kort 2: Bilden -->
+                        <img src="../images/person2-team-section.png"
+                        alt="Two Feather Force badminton players smiling and getting 
+                        ready to play doubles on an indoor court">
+
+                        <!-- Kort 2: Rubrik -->
+                        <h3>Regular Players</h3>
+
+                        <!--  Kort 2: Beskrivning -->
+                        <p>Keep the rallies going</p>
+                    </article>
+
+
+                    <!-- Kort 3: Friendly Mentors -->
+                    <article class="community-card">
+
+                        <!-- Kort 3: Bilden -->
+                        <img src="../images/person3-team-section.png"
+                        alt="Feather Force coach teaching a young player badminton 
+                        techniques on an indoor court">
+
+                        <!-- Kort 3: Rubrik -->
+                        <h3>Friendly Mentors</h3>
+
+                        <!--  Kort 3: Beskrivning -->
+                        <p>Share tips and support</p>
+                    </article>
+
+
+                    <!-- Kort 4: Event Players -->
+                    <article class="community-card">
+
+                        <!-- Kort 4: Bilden -->
+                        <img src="../images/person4-team-sektion.png"
+                        alt="Six Feather Force badminton players smiling and celebrating
+                        together with a team high-five">
+
+                        <!-- Kort 4: Rubrik -->
+                        <h3>Event Players</h3>
+
+                        <!--  Kort 4: Beskrivning -->
+                        <p>Play, connect, celebrate </p>
+                    </article>
+                 </div>
+            </div>
+         </section>
+
+         
+        <!-- CTA-Sektionen  -->
+        <section class="about-cta" id="cta">  
+
+            <!--  -->
+            <div class="content-container cta-content">
+
+                <!--  TAG -->
+                <p class="tag">JOIN OUR COMMUNITY</p>
+
+                <!-- CTA sektionens: Rubrik -->
+                <h2>Your Next Rally Starts Here</h2>
+
+                <!--  CTA sektionens: beskrivning -->
+                <p>Pick up your racket, meet your people, and make every game count.
+                    There is always room for one more at Feather Force.
+                </p>
+
+                <!-- CTA sektionens: knapp -->
+                <a class="button" href="contact.html">Get in Touch &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+
+     <!-- Sidfot med länkar och kontaktinformation -->
+    <footer class ="site-footer">
+
+        <!-- Sidfotens huvudlayout -->
+    <div class="footer-container content-container">
+
+        <!-- Klubbens logotyp med länk till startsidan -->
+        <a href="index.html" class="footer-logo">
+            <img
+                src="../images/Feather-Force-logo.png"
+                alt="Feather Force Badminton Club logo"
+            >
+        </a>
+
+        <!-- Navigationslänkar till webbplatsens sidor -->
+        <nav class="footer-column" aria-label="Footer navigation">
+
+            <!-- Rubrik för navigationslänkar -->
+            <h2>EXPLORE</h2>
+
+            <!-- Lista med sidlänkar -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Join Us</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Sociala medier och kontaktuppgifter -->
+        <div class="footer-column">
+
+            <!-- Rubrik för sociala medier och kontakt -->
+            <h2>FOLLOW &amp; CONTACT</h2>
+
+            <!-- Lista med sociala medier och kontaktlänkar -->
+            <ul>
+
+                <!-- Tillfällig länk tills klubben har ett Instagramkonto -->
+                <li>
+                    <a href="#">
+                     <i class="fi fi-brands-instagram" aria-hidden="true"></i>
+                      Instagram
+                    </a>
+                </li>
+
+                <!-- Länk till klubbens e-postadress -->
+                <li>
+                   <a href="mailto:contact@featherforce.com">
+                     <i class="fi fi-rr-envelope" aria-hidden="true"></i>
+                     mail
+                    </a>
+                </li>
+
+                <!-- Länk till kontaktsidan -->
+                <li>
+                    <a href="contact.html">
+                     <i class="fi fi-sr-marker" aria-hidden="true"></i>
+                     Contact
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Sidfotens nedre del -->
+    <div class="footer-bottom">
+
+        <!-- Copyrightinformation och klubbens slogan -->
+        <div class="footer-bottom-content content-container">
+
+            <!-- Upphovsrättsinformation -->
+            <small>
+                &copy; 2026 Feather Force Badminton Club.
+                All rights reserved.
+            </small>
+
+            <!-- Klubbens slogan -->
+            <p>Every rally brings us closer.</p>
+
+        </div>
+    </div>
+
+    </footer>
+    
+</body>
+</html>

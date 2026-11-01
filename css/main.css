@@ -1,0 +1,445 @@
+/* =========================
+   1. GLOBAL RESET
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*=============================================================*
+
+
+/* ==============================
+  2. BODY & GRUNDLÄGGANDE TYPOGRAFI
+================================= */
+
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #18324A;
+}
+
+/* Gemensam typografi för alla rubriker */
+h1, h2, h3, h4{
+    font-family: "Poppins", sans-serif ;
+    font-weight: 600;
+}
+
+/* Gemnsam typografi för alla tags */
+.tag{
+    font-family: "Poppins",sans-serif;
+    color: #2E7D5B;
+    font-size: 14px;
+}
+/*=============================================================*
+
+
+
+/* ==============================
+  3. GLOBAL CONTAINER
+================================= */
+
+/* Gemensam innehållscontainer */
+.content-container{
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 20px;
+}
+/*=============================================================*
+
+
+
+/* ==============================
+  4. BUTTONS
+================================= */
+
+/* Alla knappar */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2E7D5B;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Sekundär knappar */
+.button-secondary {
+    border: 2px #18324A solid;
+    background-color: transparent;
+    color: #18324A;
+}
+
+/* Join button dold som standard för mobil */
+.join-button {
+    display: none;
+}
+
+/* Aktivt tillstånd för primära knappar */
+.button-primary:active{
+    background-color: #1B5E40;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Aktivt tillstånd för sekundär knappar */
+.button-secondary:active{
+    background-color: rgba(255, 246, 246, 0.703);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+/*=============================================================*
+
+
+
+/* =====================================
+   5. HEADER, NAVIGATION - MOBILE FIRST
+========================================*/
+
+/* Sidhuvudets bakgrund och positionering */
+.site-header {
+    background-color: #18324A;
+    position: relative;
+}
+
+
+/* Layout för logotyp och navigation */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+}
+
+
+/* Logo */
+.logo img{
+    display: block;
+    width:200px;
+    height: auto;
+}
+
+
+/* Hamburgermeny för mobil */
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    padding: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Hamburgermenyns tre streck */
+.menu-toggle span{
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+
+/* Mobilnavigation, dold som standard */
+.navbar{
+    display: none;
+}
+
+/* Visa hamburgaremenys när menyn är öppen */ 
+.navbar.is-open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #18324A;
+    z-index: 10;
+}
+
+/* Layout för navigationslänkar */
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+
+/* Navigationslänkarnas utseende */
+.nav-list a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-list a:active{
+    color: #d39f03;
+    text-decoration: underline;
+}
+/*=============================================================*
+
+
+/* =========================
+   FOOTER - MOBILE FIRST
+========================= */
+
+/* Sidfotens bakgrundsbild, färgöverlägg och textfärg */
+.site-footer {
+    background-image:  
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.2)
+        ),
+     url("../images/footer-mobile.png");
+    background-size: cover;
+    background-position: 70% 80%;
+    background-repeat: no-repeat;
+    color:white;
+}
+
+/* Rutnätslayout för sidfotens huvudinnehåll */
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 20px;
+    padding-block: 32px;
+}
+
+
+/* Placering av logotypen över hela rutnätets bredd */
+.footer-logo {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+/* Anpassning av sidfotens logotyp */
+.footer-logo img {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Rubriker för navigation och kontaktinformation */
+.footer-column h2 {
+    color: #FFBF00;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Vertikal layout för sidfotens länklistor */
+.footer-column ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Utseende för sidfotens länkar */
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Placering av ikoner och text i kontaktlänkar */
+.footer-column:last-child a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Storlek för SVG-ikoner i sidfoten */
+.footer-column a svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+/* Avgränsning mellan sidfotens huvuddel och nederdel */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Layout för Copyright och slogan */
+.footer-bottom-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    padding-block: 12px;
+}
+
+/* Textstorlek och radavstånd i sidfotens nederdel */
+.footer-bottom-content small,
+.footer-bottom-content p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Visa text med färg och underlinje när man trycker på länkar */
+.footer-column a:active {
+    color: #d39f03;
+    text-decoration: underline;
+}
+/*=============================================================*
+
+
+
+* =========================
+   TABLET – 768px
+========================= */
+
+@media(min-width:768px){
+
+}
+/*========================================================*/
+
+
+
+
+/* =========================
+   LAPTOP – 900px
+========================= */
+
+@media (min-width: 900px){
+
+
+   /* =============================
+    LAPTOP HEADER, NAVIGATION
+   ================================*/
+
+   /*. Sidhuvudet följer med vid scrolling */
+   .site-header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+   }
+
+
+    /* Dölj hamburgermenyn på större skärmar */
+    .menu-toggle{
+        display: none;
+    }
+
+    /* Visa och anpassa navigationen för desktop */
+    .navbar,.navbar.is-open{
+        display: block;
+        position: sticky;
+        width: auto;
+        padding: 0;
+        margin-right: 50px;
+       background-color: transparent;
+    }
+
+    /* Layout för navigationslänkar */
+    .nav-list{
+        flex-direction: row;
+        align-items:  center;
+        gap: 32px;
+    }
+   
+    /* Hovereffekt för navigationslänkar, utom Join Us */
+    .nav-list a:not(.join-button):hover {
+    color: #d39f03;
+    text-decoration: underline;
+}
+
+    /* Join button */
+    .join-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2E7D5B;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .join-button:hover{
+     background-color: #1B5E40;
+    }
+    /*=============================================================*
+
+
+
+   /* =============================
+     LAPTOP - FOOTER
+   ================================*/
+
+    /* Rutnät layout för sidfotens huvudinnehåll */
+    .footer-container {
+        grid-template-columns: 2fr 1fr 1.4fr;
+        align-items: start;
+        gap: 48px;
+        padding-block: 60px;
+    }
+
+    /* Logotypens placering */
+    .footer-logo {
+        grid-column: auto;
+        justify-self: start;
+    }
+
+    /* Anpassning av logotypens storlek */
+    .footer-logo img {
+        width: 350px;
+    }
+
+    /* Sidfotens rubriker */
+    .footer-column h2 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    /* Länkarnas avstånd */
+    .footer-column ul {
+        gap: 14px;
+    }
+
+    /* Textstorlek för navigations- och kontaktlänkar */
+    .footer-column a {
+        font-size: 15px;
+    }
+
+    /* Hovereffekt för sidfotens länkar */
+    .footer-column a:hover{
+        color: #d39f03;
+        text-decoration: underline;
+    }
+
+    /* Sidfotens nedre layout */
+    .footer-bottom-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Copyright och slogan */
+    .footer-bottom-content small,
+    .footer-bottom-content p {
+        font-size: 13px;
+    }
+    
+
+}
+/*==========================================================*/
+
+
+/* =========================
+   STÖRRE DESKTOP – 1200px
+========================= */
+
+@media(min-width:1200px){
+
+}
+/*==========================================================*/
+

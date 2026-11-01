@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts | Feather Force Badminton Club</title>
+
+    <!-- CSS Filer -->
+     <link rel="stylesheet" href ="../css/main.css">
+     <link rel="stylesheet" href ="../css/contacts.css">
+
+    <!--  Javascript Filer -->
+     <script src="../js/main.js" defer></script>
+     <script src="../js/contact.js" defer></script>
+
+    <!-- Ikoner -->
+     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css">
+
+    
+    <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Sidhuvud med logotyp och navigation -->
+    <header class="site-header">
+
+         <!-- Container för sidhuvudets layout och innehåll -->
+        <div class ="header-container">
+
+            <!-- Logotyp med länk till startsidan -->
+            <a href="index.html" class ="logo">
+
+                <!-- Feather Force-klubbens logotyp -->
+                <img src ="../images/Feather-Force-logo.png"
+                 alt ="Feather Force Badminton Club logo">
+            </a>
+
+            <!-- Hamburgermeny med tillgänglighetsanpassade attribut -->
+            <button class = "menu-toggle"
+                type ="button"  
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+
+                <!-- Hamburgermenyns tre streck -->
+                <span class ="bar1"></span>     
+                <span class = "bar2"></span>    
+                <span class = "bar3"></span>    
+            </button>
+
+            <!-- Huvudnavigation för webbplatsens sidor -->
+            <nav class="navbar" id="primary-navigation" aria-label="Main navigation">
+
+                <!-- Lista med navigationslänkar -->
+                <ul class="nav-list">
+      
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <!-- Länk till kontaktsidan för medlemskap -->
+                    <li><a href="contact.html" class="join-button">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+
+
+    <!-- Sidans huvudsakliga innehåll -->
+    <main class="contacts-page">
+
+        <!-- Contact hero sektionen -->
+        <section class="contact-hero" id="contact">
+
+            <!-- Container för contact hero-sektionens innehåll -->
+            <div class="contact-hero-layout content-container">
+
+                <!-- Textinnehåll och länkar -->
+                <div class="contact-hero-content">
+
+                    <!-- TAG -->
+                    <p class="tag">LET'S CONNECT</p>
+
+                    <!-- Contact hero: Rubrik -->
+                    <h1>Every Great Rally Starts with Hello.</h1>
+
+                    <!-- Contact hero: Beskrivning -->
+                    <p>
+                        Have a question? Ready to pick up a racket? Whether you're a first-time
+                        player or a regular on court, there's a place for you at Feather Force.
+                    </p>
+
+                    <!-- Länkar till kontaktformuläret -->
+                    <div class="hero-actions">
+
+                        <a class="button button-primary" href="#contact-form">Join Our Community </a>
+                        <a class="button button-secondary" href="#contact-form"> Get in Touch </a>
+                    </div>
+                </div>
+
+                <!-- Contact hero: Bild -->
+                <img src="../images/contact-hero.png"
+                alt="Feather Force badminton club's branded towel, shuttlecock and 
+                smartphone displaying contact icons on a badminton court">
+            </div>
+        </section>
+
+
+        <!-- Kontaktsektion med klubbinformation och formulär -->
+        <section class="contact-section" id="contact-form">
+
+            <!-- Container för contact formulär innehåll -->
+            <div class="content-container">
+
+                <!-- Sektionens rubrik och introduktion -->
+                <div class="contact-heading">
+                    
+                    <!-- TAG -->
+                    <p class="tag">CONTACT &amp; MEMBERSHIP</p>
+
+                    <!-- Sektionens rubrik -->
+                    <h2>Let's Get You on Court.</h2>
+
+                    <!-- Sektionens beskrivning-->
+                    <p>Ask us anything or tell us you'd like to join. Choose what works for you.</p>
+                </div>
+
+    
+                <!-- Layout med informationskort och formulär -->
+                <div class="contact-layout">
+
+                    <!-- Klubbens kontaktinformation -->
+                    <aside class="contact-info">
+      
+                        <!-- TAG -->
+                        <p class="tag">WE'RE HERE TO HELP</p>
+      
+                        <!-- Sektionens rubrik -->
+                        <h3>More Than a Club. A Community.</h3>
+      
+                        <!-- Sektionens beskrivning -->
+                        <p>Every player starts somewhere. We're happy to answer questions and help you feel at home.</p>
+
+    
+                        <!-- Lista över kontaktämnen --> 
+                        <ul class="contact-info-list">
+       
+                        <!-- Kontaktämne 1: General Questions -->
+                           <li class="contact-info-item">
+                               <!-- Ikon för e-post -->
+                                 <span class="contact-info-icon" aria-hidden="true">
+                                    <i class="fi fi-sr-envelope"></i>
+                                </span>
+                                    
+
+                             <!-- Kontaktämnets textinnehåll -->
+                             <div>
+                                    <!-- Kontaktämnets rubrik -->
+                                    <h4>General Questions</h4>
+                                    
+                                    <!-- Beskrivning av allmänna frågor -->
+                                    <p>Ask about sessions, events, membership, or anything else.</p>
+                             </div>
+                          </li>
+
+
+                        <!-- Kontaktämne 2: New To Badminton? -->
+    
+                        <li class="contact-info-item">
+
+                            <!-- Badmintonikon -->    
+                            <span class="contact-info-icon" aria-hidden="true">
+                                <i class="fi fi-rr-badminton"></i>
+                            </span>
+
+                            <!-- Kontaktämnets textinnehåll -->    
+                            <div>
+
+                                <!-- Kontaktämnets rubrik -->
+                                <h4>New to Badminton?</h4>
+
+                                <!-- Information för nybörjare -->    
+                                <p>All experience levels are welcome. Start at your own pace.</p>
+                            </div>
+    
+                        </li>
+
+                        <!-- Kontaktämne 3: Meet the Community -->
+                        <li class="contact-info-item">
+       
+                            <!-- Ikon för gemenskap -->       
+                            <span class="contact-info-icon" aria-hidden="true">
+                                <i class="fi fi-sr-users-alt"></i>
+                            </span>
+
+                            <!-- Kontaktämnets textinnehåll -->       
+                            <div>
+
+                                <!-- Kontaktämnets rubrik -->
+                                <h4>Meet the Community</h4>
+
+                                <!-- Beskrivning av klubbens gemenskap -->
+                                <p>Make friends, build skills, and enjoy every rally together.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Information om kommande kontaktuppgifter -->
+                    <p class="contact-note">
+                        Contact email and social links can be added once
+                        the club's official details are available.
+                    </p>
+                 </aside>
+
+     
+                
+              
+<!-- Formulär för kontakt- och medlemsförfrågningar -->
+<div class="contact-form-card">
+
+    <!-- Introducerande etikett -->
+    <p class="tag">YOUR NEXT STEP</p>
+
+    <!-- Formulärets huvudrubrik -->
+    <h3>How Can We Help?</h3>
+
+    <!-- Formulärets beskrivning -->
+    <p>Choose an option below to create a message or membership enquiry.</p>
+
+    <!-- Knappar för val av förfrågningstyp -->
+    <div class="form-options">
+
+        <button class="form-option is-active"
+                type="button"
+                aria-pressed="true">
+            Contact Us
+        </button>
+
+        <button class="form-option"
+                type="button"
+                aria-pressed="false">
+            Join the Club
+        </button>
+
+    </div>
+
+    <!-- Kontakt- och medlemsformulär -->
+    <form class="contact-form" novalidate>
+
+        <!-- Fullständigt namn -->
+        <div class="form-field">
+            <label for="full-name">Full Name *</label>
+
+            <input type="text"
+                   id="full-name"
+                   name="full-name"
+                   placeholder="Your full name"
+                   required>
+
+            <span class="error-message"></span>
+        </div>
+
+        <!-- E-postadress -->
+        <div class="form-field">
+            <label for="email">Email Address *</label>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="you@example.com"
+                   required>
+
+            <span class="error-message"></span>
+        </div>
+
+        <!-- Fält för kontaktförfrågan -->
+        <div class="contact-fields">
+
+            <!-- Val av frågekategori -->
+            <div class="form-field">
+                <label for="question">What's Your Question About?</label>
+
+                <select id="question" name="question">
+                    <option value="general">General enquiry</option>
+                    <option value="events">Events</option>
+                    <option value="sessions">Weekly sessions</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Meddelande för kontaktförfrågan -->
+            <div class="form-field">
+                <label for="contact-message">Your Message *</label>
+
+                <textarea id="contact-message"
+                          name="contact-message"
+                          placeholder="Write your message here..."
+                          required></textarea>
+
+                <span class="error-message"></span>
+            </div>
+
+        </div>
+
+        <!-- Fält för medlemsförfrågan -->
+        <div class="join-fields" hidden>
+
+            <!-- Spelarens erfarenhetsnivå -->
+            <div class="form-field">
+                <label for="playing-level">Your Playing Level *</label>
+
+                <select id="playing-level" name="playing-level">
+                    <option value="">Select your level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="experienced">Experienced</option>
+                </select>
+
+                <span class="error-message"></span>
+            </div>
+
+            <!-- Spelarens intresseområde -->
+            <div class="form-field">
+                <label for="interest">What Interests You Most?</label>
+
+                <select id="interest" name="interest">
+                    <option value="social">Casual games &amp; friendships</option>
+                    <option value="training">Training</option>
+                    <option value="tournaments">Tournaments</option>
+                </select>
+            </div>
+
+            <!-- Ytterligare information -->
+            <div class="form-field">
+                <label for="join-message">
+                    Anything You'd Like Us to Know?
+                </label>
+
+                <textarea id="join-message"
+                          name="join-message"
+                          placeholder="Tell us about yourself..."></textarea>
+            </div>
+
+            <!-- Samtycke till medlemsförfrågan -->
+            <div class="consent-group">
+
+                <label class="consent-field">
+                    <input type="checkbox"
+                           id="consent"
+                           name="consent">
+
+                    I agree to share these details so Feather Force
+                    can respond to my membership enquiry.
+                </label>
+
+                <span class="error-message"></span>
+            </div>
+
+        </div>
+
+        <!-- Formulärets avslutande information och knapp -->
+        <div class="form-submit">
+
+            <p class="form-note">* Required fields</p>
+
+            <button class="button button-primary" type="submit">
+                Prepare Message →
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+             </div>
+           </div>
+     </section>
+
+
+        <!-- Sektion som visar tre steg för att komma igång -->
+        <section class="joining-steps">
+  
+            <!-- Container för contact joining-steps innehåll -->
+            <div class="content-container">
+
+                <!-- Sektionens rubrik och introduktion -->  
+                <div class="steps-heading">
+  
+                    <!-- TAG -->
+                    <p class="tag">SIMPLE AS 1 · 2 · 3</p>
+  
+                    <!-- Sektionens rubrik -->
+                    <h2>From Hello to Your First Rally</h2>
+  
+                    <!-- Sektionens beskrivning-->
+                    <p>No pressure. Just a friendly place to get started.</p>
+
+                </div>
+
+  
+                <!-- Rutnät med tre steg -->
+                <div class="steps-grid">
+
+                    <!-- Steg 1: Berätta om dig själv -->  
+                    <article class="step-card">
+  
+                        <!-- Etikett -->
+                        <p class="step-label">01 / SAY HELLO</p>
+  
+                        <!-- Sektionens rubrik -->
+                        <h3>Tell Us About Yourself</h3>
+  
+                        <!-- Sektionens introduktion -->
+                        <p>Send a question or let us know you're interested in joining.</p>
+  
+                    </article>
+
+  
+                    <!-- Steg 2: Hitta nästa steg -->
+                    <article class="step-card">
+  
+                        <!-- Etikett -->
+                        <p class="step-label">02 / FIND YOUR FIT</p>
+  
+                        <!-- Sektionens rubrik -->
+                        <h3>Discover Your Next Step</h3>
+  
+                        <!-- Sektionens introduktion -->
+                        <p>Ask about sessions, training, and ways to get involved.</p>
+  
+                    </article>
+
+  
+                    <!-- Steg 3: Spela tillsammans -->
+                    <article class="step-card">
+  
+                        <!-- Etikett -->
+                        <p class="step-label">03 / PLAY TOGETHER</p>
+  
+                        <!-- Sektionens rubrik -->
+                        <h3>Make Every Rally Count</h3>
+  
+                        <!-- Sektionens introduktion -->
+                        <p>Meet other players, build confidence, and enjoy badminton with the community.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sektion med vanliga frågor -->
+        <section class="contact-faq">
+      
+            <div class="content-container faq-layout">
+      
+                <!-- Introduktion till frågorna -->
+                <div class="faq-intro">
+      
+                    <p class="tag">GOOD TO KNOW</p>
+                    <h2>Before You Step on Court</h2>
+                    <p>A few quick answers to help you get started.</p>
+    
+                </div>
+
+    
+                <!-- Lista med frågor och svar; JavaScript läggs till senare -->
+                <div class="faq-list">
+
+                    <!-- Fråga 1 -->    
+                    <div class="faq-item">
+                        <h3>
+                            <button class="faq-question" type="button"
+                             aria-expanded="false"
+                             aria-controls="faq-answer-1"
+                             > Do I need experience to join?
+                            </button>
+    
+                        </h3>
+
+                    
+                        <div class="faq-answer" id="faq-answer-1" hidden>
+                            <p>
+                                Not at all. Feather Force welcomes beginners as well as
+                                experienced players.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- Fråga 2 -->
+                    <div class="faq-item">
+
+                        <h3>
+                            <button class="faq-question" type="button"
+                              aria-expanded="false"
+                              aria-controls="faq-answer-2"
+                             >Can I ask about events before joining?
+                            </button>
+                        </h3>
+
+            
+                        <div class="faq-answer" id="faq-answer-2" hidden>
+           
+                            <p>
+                                Yes. Choose “Contact Us” above and ask us about events
+                                and tournaments.
+                            </p>
+                        </div>
+                    </div>
+
+          
+                    <!-- Fråga 3 -->
+                    <div class="faq-item">
+                        <h3>
+                            <button class="faq-question" type="button"
+                             aria-expanded="false"
+                             aria-controls="faq-answer-3"
+                             >When and where does the club meet?
+                            </button>
+                        </h3>
+
+          
+                     <div class="faq-answer" id="faq-answer-3" hidden>
+                         <p>
+                            Session times and venue details have not yet been confirmed
+                            on this page. Please ask the club directly.
+                         </p>
+                     </div>
+                    </div>
+
+          
+                    <!-- Fråga 4 -->
+                    <div class="faq-item">
+                        <h3>
+                            <button class="faq-question" type="button"
+                                aria-expanded="false"
+                                aria-controls="faq-answer-4"
+                                >Is this a confirmed membership registration?
+                            </button>
+                        </h3>
+
+                        <div class="faq-answer" id="faq-answer-4" hidden>
+                            <p>
+                                No. This page currently prepares an enquiry only. Membership
+                                registration must be confirmed directly with the club.
+                            </p>
+                        </div>
+                   </div>
+                </div>
+            </div>
+       </section>
+    </main>
+
+
+
+
+
+    <!-- Sidfot med länkar och kontaktinformation -->
+    <footer class ="site-footer">
+
+        <!-- Sidfotens huvudlayout -->
+    <div class="footer-container content-container">
+
+        <!-- Klubbens logotyp med länk till startsidan -->
+        <a href="index.html" class="footer-logo">
+            <img
+                src="../images/Feather-Force-logo.png"
+                alt="Feather Force Badminton Club logo"
+            >
+        </a>
+
+        <!-- Navigationslänkar till webbplatsens sidor -->
+        <nav class="footer-column" aria-label="Footer navigation">
+
+            <!-- Rubrik för navigationslänkar -->
+            <h2>EXPLORE</h2>
+
+            <!-- Lista med sidlänkar -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Join Us</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Sociala medier och kontaktuppgifter -->
+        <div class="footer-column">
+
+            <!-- Rubrik för sociala medier och kontakt -->
+            <h2>FOLLOW &amp; CONTACT</h2>
+
+            <!-- Lista med sociala medier och kontaktlänkar -->
+            <ul>
+
+                <!-- Tillfällig länk tills klubben har ett Instagramkonto -->
+                <li>
+                    <a href="#">
+                     <i class="fi fi-brands-instagram" aria-hidden="true"></i>
+                      Instagram
+                    </a>
+                </li>
+
+                <!-- Länk till klubbens e-postadress -->
+                <li>
+                   <a href="mailto:contact@featherforce.com">
+                     <i class="fi fi-rr-envelope" aria-hidden="true"></i>
+                     mail
+                    </a>
+                </li>
+
+                <!-- Länk till kontaktsidan -->
+                <li>
+                    <a href="contact.html">
+                     <i class="fi fi-sr-marker" aria-hidden="true"></i>
+                     Contact
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Sidfotens nedre del -->
+    <div class="footer-bottom">
+
+        <!-- Copyrightinformation och klubbens slogan -->
+        <div class="footer-bottom-content content-container">
+
+            <!-- Upphovsrättsinformation -->
+            <small>
+                &copy; 2026 Feather Force Badminton Club.
+                All rights reserved.
+            </small>
+
+            <!-- Klubbens slogan -->
+            <p>Every rally brings us closer.</p>
+
+        </div>
+    </div>
+
+    </footer>
+    
+</body>
+</html>
+
