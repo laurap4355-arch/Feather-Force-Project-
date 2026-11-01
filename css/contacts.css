@@ -398,3 +398,104 @@
   font-size: 14px;
   line-height: 1.5;
 }
+
+
+/* =============================================
+   7. CONTACT FAQ - MOBILE FIRST
+============================================= */
+
+/* Sektionens bakgrund och avstånd */
+.contact-faq {
+  padding: 56px 0;
+}
+
+/* Layoutför rutnät */
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* FAQ-rubrikens placering */
+.faq-intro .tag {
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* FAQ-sektionens huvudrubrik */
+.faq-intro h2 {
+  max-width: 380px;
+  margin-bottom: 14px;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+/* Kort introduktion under rubriken */
+.faq-intro > p:not(.tag) {
+  font-size: 16px;
+}
+
+/* Lista med vanliga frågor */
+.faq-list {
+  display: grid;
+}
+
+/* Avgränsning mellan FAQ-frågorna */
+.faq-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #d8e0e6;
+}
+
+/* Frågerubriken tar bort standardmarginalen */
+.faq-item h3 {
+  margin: 0;
+}
+
+/* Frågeknappen fyller hela radens bredd */
+.faq-question {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #18324a;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Liten pil före frågan */
+.faq-question::before {
+  content: "▾";
+  flex: 0 0 auto;
+  font-size: 14px;
+}
+
+/* Pilens utseende när frågan är stängd */
+.faq-question[aria-expanded="false"]::before {
+  content: "▸";
+}
+
+/* Svarstextens avstånd och färg */
+.faq-answer {
+  padding: 12px 0 0 22px;
+}
+
+/* Svarstextens typografi */
+.faq-answer p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* Dolt svar visas inte */
+.faq-answer[hidden] {
+  display: none;
+}
