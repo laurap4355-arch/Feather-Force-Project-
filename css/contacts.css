@@ -68,3 +68,264 @@
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+
+
+/* =============================================
+   2. CONTACT & MEMBERSHIP - SEKTION - MOBILE FIRST
+============================================= */
+
+/* Sektionens bakgrund och avstånd */
+.contact-section {
+    padding: 40px 0;
+}
+
+/* Centrering och avstånd för sektionens introduktion */
+.contact-heading {
+    margin: 0 auto 24px;
+    text-align: center;
+}
+
+/* Etiketternas gemensamma typografi och avstånd */
+.contact-heading .tag,
+.contact-info .tag,
+.contact-form-card > .tag {
+    margin-bottom: 8px;
+    letter-spacing: 1.5px;
+}
+
+/* Sektionens huvudrubrik */
+.contact-heading h2 {
+    margin-bottom: 8px;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+/* Sektionens introducerande text */
+.contact-heading > p:not(.tag) {
+    max-width: 420px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+/* Enspaltig layout för kontaktinformation och formulär */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+/* Gemensamt utseende för informations- och formulärkort */
+.contact-info,
+.contact-form-card {
+    padding: 16px;
+    border: 1px solid #d8e0e6;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgb(24 50 74 / 8%);
+}
+
+/* Kortens rubriker */
+.contact-info h3,
+.contact-form-card h3 {
+    margin-bottom: 8px;
+    font-size: 21px;
+    line-height: 1.2;
+}
+
+/* Kortens beskrivande text */
+.contact-info > p:not(.tag),
+.contact-form-card > p:not(.tag) {
+    margin-bottom: 14px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =============================================
+   KONTAKTINFORMATION
+============================================= */
+
+/* Lista över klubbens kontaktämnen */
+.contact-info-list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Layout och avstånd för varje kontaktämne */
+.contact-info-item {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 10px;
+    align-items: start;
+    padding: 12px 0;
+}
+
+/* Avskiljande linje mellan kontaktämnen */
+.contact-info-item + .contact-info-item {
+    border-top: 1px solid #e4e9ed;
+}
+
+/* Kontaktikonens storlek och utseende */
+.contact-info-icon {
+    display: grid;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    border-radius: 8px;
+    background-color: #edf3f1;
+    color: #2e7d5b;
+}
+
+/* Kontaktämnets rubrik */
+.contact-info-item h4 {
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+/* Kontaktämnets beskrivande text */
+.contact-info-item p {
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+/* Information om kommande kontaktuppgifter */
+.contact-info .contact-note {
+    margin: 12px 0 0;
+    font-size: 11px;
+}
+
+/* =============================================
+   VAL AV FÖRFRÅGNINGSTYP
+============================================= */
+
+/* Tvåspaltig layout för formuläralternativen */
+.form-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 14px 0;
+}
+
+/* Knapparnas grundutseende */
+.form-option {
+    min-height: 40px;
+    padding: 8px;
+    border: 1px solid #d3dce4;
+    border-radius: 6px;
+    background-color: #f5f7f8;
+    color: #18324a;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Aktivt tillstånd för valt formuläralternativ */
+.form-option.is-active {
+    border-color: #18324a;
+    background-color: #18324a;
+    color: #ffffff;
+}
+
+/* =============================================
+   KONTAKTFORMULÄR
+============================================= */
+
+/* Enspaltig layout för formulärets fält */
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* Layout och avstånd för varje formulärfält */
+.form-field {
+    display: grid;
+    gap: 5px;
+}
+
+/* Formulärfältens etiketter */
+.form-field label {
+    color: #18324a;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Gemensamt utseende för formulärfält */
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    min-height: 36px;
+    padding: 8px 10px;
+    border: 1px solid #d3dce4;
+    border-radius: 5px;
+    color: #18324a;
+    font-size: 12px;
+}
+
+/* Meddelandefältets höjd och storleksändring */
+.form-field textarea {
+    min-height: 96px;
+}
+
+/* Platshållartextens färg */
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #18324a;
+}
+
+/* Layout för samtyckesrutan och tillhörande text */
+.consent-field {
+    display: grid;
+    grid-template-columns: 14px minmax(0, 1fr);
+    gap: 6px;
+    align-items: start;
+}
+
+/* Samtyckesrutans storlek och färg */
+.consent-field input {
+    width: 14px;
+    min-height: 14px;
+    margin: 1px 0 0;
+    accent-color: #2e7d5b;
+}
+
+/* Typografi för samtyckestexten */
+.consent-field label {
+    color: #18324a;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* =============================================
+   FORMULÄRETS SKICKA-KNAPP
+============================================= */
+
+/* Layout för formulärets avslutande innehåll */
+.form-submit {
+    display: grid;
+    gap: 10px;
+}
+
+/* Informationstext vid formulärets skickaknapp */
+.form-submit p {
+    margin: 0;
+    color: #18324a;
+    font-size: 10px;
+}
+
+/* Skickaknappens storlek och utseende */
+.form-submit .button {
+    width: 100%;
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+
+
