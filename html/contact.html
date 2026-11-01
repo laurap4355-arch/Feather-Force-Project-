@@ -11,6 +11,7 @@
 
     <!--  Javascript Filer -->
      <script src="../js/main.js" defer></script>
+     <script src="../js/contact.js" defer></script>
 
     <!-- Ikoner -->
      <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
@@ -71,13 +72,6 @@
         </div>
 
     </header>
-
-
-
-
-
-
-
 
 
 
@@ -242,100 +236,103 @@
                      <!-- Formulärets beskrivning -->
                      <p>Choose an option below to create a message or membership enquiry.</p>
         
+                   
+
                      <!-- Knappar för val av förfrågningstyp -->
                      <div class="form-options">
-                         <!-- Alternativ för kontaktförfrågan -->
-                         <button type="button" aria-pressed="true">Contact Us</button>
-                         <button type="button" aria-pressed="false">Join the Club</button>
+                        <!-- Alternativ för kontaktförfrågan -->
+                        <button class="form-option is-active" type="button"aria-pressed="true">Contact Us</button>
+
+
+                     <!-- Alternativ för medlemsförfrågan -->
+                     <button class="form-option"  type="button" aria-pressed="false"> Join the Club</button>
+                  </div>
+            
+                  <!-- Formulär för kontakt- och medlemsförfrågningar -->
+                  <form class="contact-form"> 
+                     <!-- Fullständigt namn -->
+                     <div class="form-field">
+                        <label for="full-name">Full Name *</label>
+                        <input type="text" id="full-name" name="full-name"
+                        placeholder="Your full name" required>
                      </div>
 
-                     <!-- Kontaktformulärets fält -->
-                     <form class="contact-form">
-                         <!-- Fält för fullständigt namn -->
+
+                     <!-- E-postadress -->
+                     <div class="form-field">
+                         <label for="email">Email Address *</label> 
+                         <input type="email" id="email" name="email"
+                         placeholder="you@example.com" required>
+                     </div>
+
+                     <!-- Fält för kontaktförfrågan -->
+                     <div class="contact-fields">
+                         <!-- Val av frågekategori -->
                          <div class="form-field">
-                             <!-- Etikett för namn -->
-                             <label for="full-name">Full Name *</label>
-    
-                             <!-- Obligatoriskt namnfält -->    
-                             <input type="text" id="full-name" name="full-name" required>
+                             <label for="question">What's Your Question About?</label>
+                                <select id="question" name="question">
+                                 <option value="general">General enquiry</option>
+                                 <option value="events">Events</option>
+                                 <option value="sessions">Weekly sessions</option>
+                                 <option value="other">Other</option>
+                                </select>
                          </div>
 
-                         <!-- Fält för e-postadress -->    
+                         <!-- Meddelande för kontaktförfrågan -->
                          <div class="form-field">
-                             <!-- Etikett för e-postadress -->
-                             <label for="email">Email Address *</label>
-
-                             <!-- Obligatoriskt e-postfält -->    
-                             <input type="email" id="email" name="email" required>
+                             <label for="contact-message">Your Message *</label>
+                             <textarea id="contact-message" name="contact-message"
+                             placeholder="Hi Feather Force! I'd love to know more about..." required></textarea>
                          </div>
+                     </div>
+                
+                     <!-- Fält för medlemsförfrågan -->
+                     <div class="join-fields" hidden>
+                     <!-- Spelarens erfarenhetsnivå -->
+                     <div class="form-field">
+                         <label for="playing-level">Your Playing Level *</label>
+                         <select id="playing-level" name="playing-level">
+                             <option value="">Select your level</option>
+                             <option value="beginner">Beginner</option>
+                             <option value="intermediate">Intermediate</option>
+                             <option value="experienced">Experienced</option>
+                         </select>
+                      </div>
 
-    
-                         <!-- Fält för spelarens erfarenhetsnivå -->
-                         <div class="form-field">
-                             <!-- Etikett för spelnivå -->
-                             <label for="playing-level">Your Playing Level *</label>
+                     <!-- Spelarens intresseområde -->
+                     <div class="form-field">
+                         <label for="interest">What Interests You Most?</label>
+                         <select id="interest" name="interest">
+                             <option value="social">Casual games &amp; friendships</option>
+                             <option value="training">Training</option>
+                            <option value="tournaments">Tournaments</option>
+                         </select>
+                     </div>
 
-                             <!-- Obligatorisk lista över spelnivåer -->
-    
-                             <select id="playing-level" name="playing-level" required>
-                                
-                                  <!-- Standardalternativ -->    
-                                 <option value="">Select your level</option>
+                     <!-- Ytterligare information -->
+                     <div class="form-field">
+                         <label for="join-message"> Anything You'd Like Us to Know?</label>
+                         <textarea id="join-message" name="join-message"
+                         placeholder="Tell us about yourself..."></textarea>
+                     </div>
 
-                                 <!-- Nybörjarnivå -->    
-                                 <option value="beginner">Beginner</option>
-    
-                                 <!-- Medelnivå -->
-                                 <option value="intermediate">Intermediate</option>
-    
-                                 <!-- Erfaren spelare -->
-                                 <option value="experienced">Experienced</option>
-                              </select>
-                         </div>
-
-                         <!-- Fält för spelarens intresseområde -->    
-                         <div class="form-field">
-                             <!-- Etikett för intresseområde -->
-                             <label for="interest">What Interests You Most?</label>
-     
-                             <!-- Lista över klubbens aktiviteter -->
-                             <select id="interest" name="interest">
-                                 <!-- Sociala aktiviteter -->    
-                                 <option value="social">Casual games &amp; friendships</option>
- 
-                                 <!-- Träning -->    
-                                 <option value="training">Training</option>
-    
-                                 <!-- Turneringar -->
-                                 <option value="tournaments">Tournaments</option>
-                              </select>
-                           </div>
-
-                          <!-- Fält för ytterligare information -->    
-                          <div class="form-field form-field-full">
-                             <!-- Etikett för meddelande --> 
-                             <label for="message">Anything You'd Like Us to Know?</label>
-
-                             <!-- Textfält för meddelande -->    
-                             <textarea id="message" name="message"></textarea>
-                         </div>
-
-                         <!-- Samtycke till behandling av kontaktuppgifter -->    
-                         <label class="consent-field">
-                             <!-- Obligatorisk kryssruta för samtycke -->    
-                             <input type="checkbox" name="consent" required>
-
-                             <!-- Information om samtycke -->    
-                             I agree to share these details so Feather Force can respond to my enquiry.
-                         </label>
-
-                         <!-- Knapp för att skicka formuläret -->    
-                         <button class="button button-primary" type="submit"> Prepare Join Request &rarr; </button>
-                        </form>
-                   </div>
-                </div>
-            </div>
-        </section>
+                     <!-- Samtycke till kontakt -->
+                     <label class="consent-field">
+                         <input type="checkbox" id="consent" name="consent"> 
+                         I agree to share these details so Feather Force
+                         can respond to my membership enquiry.
+                      </label>
+                      </div>
+                        <!-- Formulärets avslutande information och knapp -->
+                      <div class="form-submit">
+                         <p class="form-note">* Required fields</p>
+                         <button class="button button-primary" type="submit"> Prepare Message → </button>
+                       </div>
+                 </form>
+                  </div>
+               </div>
+           </div>
+     </section>
 
 
         <!-- Sektion som visar tre steg för att komma igång -->
