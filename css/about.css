@@ -196,3 +196,66 @@
     line-height: 1.5;
 }
 
+
+/* =============================================
+   4. OUR COMMUNITY - SEKTION - MOBILE FIRST
+============================================= */
+
+/* Sektionens bakgrund och avstånd */
+.about-community {
+    padding: 56px 0;
+    border-bottom: 1px #B9B9B9 solid;
+}
+
+/* Centrering och avstånd för sektionens introduktion */
+.community-heading {
+    margin: 0 auto 32px;
+    text-align: center;
+}
+
+/* Etikettens typografi och avstånd */
+.community-heading .tag {
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Sektionens huvudrubrik */
+.community-heading h2 {
+    margin-bottom: 12px;
+    font-size: 34px;
+    line-height: 1.15;
+}
+
+/* Sektionens beskrivande text */
+.community-heading > p:not(.tag) {
+    font-size: 16px;
+}
+
+/* Tvåspaltig layout för gemenskapskorten på mobil */
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 8px;
+}
+
+/* Gemenskapskortets bild */
+.community-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 8px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Gemenskapskortets rubrik */
+.community-card h3 {
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+/* Gemenskapskortets beskrivande text */
+.community-card p {
+    font-size: 14px;
+}
