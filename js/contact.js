@@ -73,3 +73,86 @@ function clearError(input) {
     // Ta bort feltexten
     error.textContent = "";
 }
+
+
+
+/* =============================================
+   CONTACT - BYT FORMULÄR
+============================================= */
+
+// Gå igenom alla formulärknappar
+formButtons.forEach(function(button) {
+
+    // Lyssna efter klick
+    button.addEventListener("click", function() {
+
+        // Ta bort aktiv markering från knapparna
+        formButtons.forEach(function(otherButton) {
+            otherButton.classList.remove("is-active");
+            otherButton.setAttribute("aria-pressed", "false");
+        });
+
+        // Markera den valda knappen
+        button.classList.add("is-active");
+        button.setAttribute("aria-pressed", "true");
+
+        // Kontrollera vilken knapp som valdes
+        if (button.textContent.trim() === "Join the Club") {
+
+            isJoinForm = true;
+
+            // Dölj kontaktfält och visa medlemsfält
+            contactFields.hidden = true;
+            joinFields.hidden = false;
+
+            // Ändra obligatoriska fält
+            messageInput.required = false;
+            levelInput.required = true;
+            consentInput.required = true;
+
+            // Ändra knapptexten
+            submitButton.textContent = "Prepare Join Request →";
+            formNote.textContent = "No membership payment is collected here.";
+
+        } else {
+
+            isJoinForm = false;
+
+            // Visa kontaktfält och dölj medlemsfält
+            contactFields.hidden = false;
+            joinFields.hidden = true;
+
+            // Ändra obligatoriska fält
+            messageInput.required = true;
+            levelInput.required = false;
+            consentInput.required = false;
+
+            // Ändra knapptexten
+            submitButton.textContent = "Prepare Message →";
+            formNote.textContent = "* Required fields";
+        }
+
+        // Ta bort gamla felmeddelanden
+        const errors = document.querySelectorAll(".error-message");
+
+        errors.forEach(function(error) {
+            error.textContent = "";
+        });
+
+        // Ta bort röda markeringar
+        const invalidFields = document.querySelectorAll(".is-invalid");
+
+        invalidFields.forEach(function(field) {
+            field.classList.remove("is-invalid");
+        });
+
+        // Ta bort tidigare förhandsvisning
+        const preview = document.querySelector(".request-preview");
+
+        if (preview) {
+            preview.remove();
+        }
+
+    });
+
+});
