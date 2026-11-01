@@ -501,6 +501,24 @@
 }
 
 
+/* Röd kant för ogiltiga fält */
+.form-field .is-invalid {
+    border: 2px solid #dc2626;
+    background-color: #fff5f5;
+}
+
+/* Röd text för felmeddelanden */
+.error-message {
+    color: #dc2626;
+    font-size: 12px;
+}
+
+/* Röd text för ogiltigt samtycke */
+.consent-group:has(.is-invalid) {
+    color: #dc2626;
+}
+
+
 /* =========================
    TABLET – 768px
 ========================= */
