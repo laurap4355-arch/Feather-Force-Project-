@@ -91,6 +91,11 @@
     margin-bottom: 24px;
 }
 
+/* Dölj evenemang som inte matchar valt filter */
+.event-card[hidden] {
+    display: none;
+}
+
 /* Kategoriknapparnas grundutseende */
 .filter-button {
     padding: 10px 16px;
